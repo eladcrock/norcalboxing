@@ -1,11 +1,12 @@
 import HeroSection from "@/components/HeroSection";
+import heroAbout from "@/assets/hero-about.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
   return (
     <main>
       <HeroSection
-        backgroundImage="https://images.unsplash.com/photo-1517438322307-e67111335449?w=1920&q=80"
+        backgroundImage={heroAbout}
         title="About Us"
         subtitle="Professional boxing training in a welcoming, supportive environment."
       />
