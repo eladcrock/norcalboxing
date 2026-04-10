@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 interface HeroSectionProps {
-  title: string;
+  title: React.ReactNode;
   subtitle?: string;
   ctaText?: string;
   ctaLink?: string;
