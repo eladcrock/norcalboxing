@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Users, User, Baby } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
+import heroHome from "@/assets/hero-home.jpg";
 
 const programs = [
   {
