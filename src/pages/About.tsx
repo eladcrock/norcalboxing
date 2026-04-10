@@ -1,5 +1,4 @@
 import HeroSection from "@/components/HeroSection";
-import heroAbout from "@/assets/hero-about.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
