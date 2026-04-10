@@ -5,6 +5,7 @@ import { ArrowRight, Users, User, Baby } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import logo from "@/assets/logo-black.png";
+import groupPhoto from "@/assets/hero-home.jpg";
 
 const programs = [
   {
@@ -59,6 +60,12 @@ const Index = () => {
             Benicia Boxing & Martial Arts, NorCal Boxing Club brings world-class boxing instruction
             to Fairfield.
           </p>
+          <img
+            src={groupPhoto}
+            alt="NorCal Boxing Club group photo"
+            className="mx-auto mt-8 max-w-3xl rounded-lg shadow-lg w-full"
+            loading="lazy"
+          />
         </div>
       </section>
 
