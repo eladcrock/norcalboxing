@@ -31,6 +31,7 @@ const Index = () => {
   return (
     <main>
       <HeroSection
+        backgroundImage={heroHome}
         title={
           <>
             Welcome <span className="text-primary">All</span>

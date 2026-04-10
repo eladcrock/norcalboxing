@@ -42,6 +42,7 @@ const Contact = () => {
   return (
     <main>
       <HeroSection
+        backgroundImage={heroContact}
         title="Contact Us"
         subtitle="Get in touch to learn more or sign up for two free weeks of training."
       />

@@ -14,6 +14,7 @@ const Programs = () => {
   return (
     <main>
       <HeroSection
+        backgroundImage={heroPrograms}
         title="Boxing Programs"
         subtitle="Professional boxing instruction for all ages and skill levels — in a clean, welcoming environment."
       />

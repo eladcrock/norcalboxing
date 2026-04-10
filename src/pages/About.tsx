@@ -6,6 +6,7 @@ const About = () => {
   return (
     <main>
       <HeroSection
+        backgroundImage={heroAbout}
         title="About Us"
         subtitle="Professional boxing training in a welcoming, supportive environment."
       />
