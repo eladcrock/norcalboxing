@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo-black.png";
 
 interface HeroSectionProps {
   title: React.ReactNode;
   subtitle?: string;
   ctaText?: string;
   ctaLink?: string;
+  backgroundImage?: string;
 }
 
 const HeroSection = ({
@@ -14,19 +14,29 @@ const HeroSection = ({
   subtitle,
   ctaText,
   ctaLink,
+  backgroundImage,
 }: HeroSectionProps) => {
   return (
-    <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden bg-secondary">
-      {/* Subtle gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/40 to-background/0" />
+    <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden">
+      {/* Background image */}
+      {backgroundImage && (
+        <img
+          src={backgroundImage}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+          width={1920}
+          height={1080}
+        />
+      )}
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-foreground/60" />
 
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-        <img src={logo} alt="NorCal Boxing Club" className="mx-auto mb-6 h-24 w-auto md:h-32" />
-        <h1 className="mb-4 text-4xl font-extrabold uppercase tracking-tight md:text-6xl lg:text-7xl">
+        <h1 className="mb-4 text-4xl font-extrabold uppercase tracking-tight text-white md:text-6xl lg:text-7xl">
           {title}
         </h1>
         {subtitle && (
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-white/80 md:text-xl">
             {subtitle}
           </p>
         )}

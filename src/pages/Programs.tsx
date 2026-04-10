@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import heroPrograms from "@/assets/hero-programs.jpg";
 import PhotoGallery from "@/components/PhotoGallery";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
