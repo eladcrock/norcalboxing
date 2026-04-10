@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Users, User, Baby } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
-import heroHome from "@/assets/hero-home.jpg";
 
 const programs = [
   {
@@ -31,7 +30,7 @@ const Index = () => {
   return (
     <main>
       <HeroSection
-        backgroundImage={heroHome}
+        backgroundImage="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=1920&q=80"
         title={
           <>
             Welcome <span className="text-primary">All</span>
