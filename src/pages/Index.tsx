@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Users, User, Baby } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
-import heroHome from "@/assets/hero-home.jpg";
+import logo from "@/assets/logo-black.png";
 
 const programs = [
   {
@@ -30,17 +30,21 @@ const programs = [
 const Index = () => {
   return (
     <main>
-      <HeroSection
-        backgroundImage={heroHome}
-        title={
-          <>
+      {/* Home Hero with Logo */}
+      <section className="flex min-h-[60vh] items-center justify-center bg-secondary py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight md:text-5xl">
             Welcome <span className="text-primary">All</span>
-          </>
-        }
-        subtitle="NorCal Boxing Club offers professional boxing training for men, women, and children of all ages in a clean, state-of-the-art facility with experienced instructors."
-        ctaText="Get Two Weeks Free"
-        ctaLink="/contact"
-      />
+          </h2>
+          <img src={logo} alt="NorCal Boxing Club" className="mx-auto mb-6 h-40 w-auto md:h-56 lg:h-72" />
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
+            NorCal Boxing Club offers professional boxing training for men, women, and children of all ages in a clean, state-of-the-art facility with experienced instructors.
+          </p>
+          <Button asChild size="lg" className="text-base font-semibold uppercase tracking-wider">
+            <Link to="/contact">Get Two Weeks Free</Link>
+          </Button>
+        </div>
+      </section>
 
       {/* Intro */}
       <section className="py-16">
