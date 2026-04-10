@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import heroPrograms from "@/assets/hero-programs.jpg";
 import PhotoGallery from "@/components/PhotoGallery";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ const Programs = () => {
   return (
     <main>
       <HeroSection
+        backgroundImage={heroPrograms}
         title="Boxing Programs"
         subtitle="Professional boxing instruction for all ages and skill levels — in a clean, welcoming environment."
       />
