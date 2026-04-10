@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo-black.png";
 
@@ -31,6 +31,7 @@ const Footer = () => {
                 <Link
                   key={link.to}
                   to={link.to}
+                  onClick={() => window.scrollTo(0, 0)}
                   className="text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
                   {link.label}
