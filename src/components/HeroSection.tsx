@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo-black.png";
 
 interface HeroSectionProps {
   title: React.ReactNode;
   subtitle?: string;
   ctaText?: string;
   ctaLink?: string;
-  overlay?: boolean;
 }
 
 const HeroSection = ({
@@ -14,18 +14,14 @@ const HeroSection = ({
   subtitle,
   ctaText,
   ctaLink,
-  overlay = true,
 }: HeroSectionProps) => {
   return (
-    <section className="relative flex min-h-[60vh] items-center justify-center overflow-hidden bg-secondary">
-      {/* Dark overlay pattern */}
-      {overlay && (
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-      )}
-      {/* Decorative accent line */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary" />
+    <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden bg-secondary">
+      {/* Subtle gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/40 to-background/0" />
 
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+        <img src={logo} alt="NorCal Boxing Club" className="mx-auto mb-6 h-24 w-auto md:h-32" />
         <h1 className="mb-4 text-4xl font-extrabold uppercase tracking-tight md:text-6xl lg:text-7xl">
           {title}
         </h1>

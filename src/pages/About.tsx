@@ -6,7 +6,7 @@ const About = () => {
     <main>
       <HeroSection
         title="About Us"
-        subtitle="The story behind NorCal Boxing and the passion that drives us."
+        subtitle="Professional boxing training in a welcoming, supportive environment."
       />
 
       {/* Story */}
@@ -18,20 +18,21 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                NorCal Boxing was founded by the same coach behind Benicia Boxing, with a vision to
-                expand access to world-class boxing training across Northern California. What started
-                as a single gym has grown into a movement — bringing the sweet science to fighters of
-                all ages and skill levels.
+                NorCal Boxing Club is brought to you by the same team behind Benicia Boxing &
+                Martial Arts. After years of building a thriving boxing community in Benicia,
+                we're expanding to Fairfield to bring the same professional instruction, clean
+                facilities, and welcoming atmosphere to more of Northern California.
               </p>
               <p>
-                Our philosophy is simple: boxing is for everyone. Whether you're training for
-                competition, fitness, or self-defense, we meet you where you are and help you reach
-                where you want to be. We believe in hard work, respect, and the transformative power
-                of the sport.
+                Our goal is to instill a high level of skill while imparting the traditions of
+                respect, self-discipline, humility, and compassion. Whether you're looking to
+                compete, get in shape, or learn self-defense, we have experienced instructors
+                who can help you reach your goals in a fun and safe environment.
               </p>
               <p>
-                With decades of combined coaching experience, our team creates a supportive and
-                challenging environment where every member can thrive.
+                Boxing training helps improve physical fitness — including coordination,
+                flexibility, and strength — but the practice also reinforces some of life's
+                most valuable lessons, such as perseverance and self-control.
               </p>
             </div>
           </div>
@@ -47,19 +48,19 @@ const About = () => {
           <div className="grid gap-6 md:grid-cols-3">
             {[
               {
-                title: "Discipline",
+                title: "Respect",
                 description:
-                  "Boxing demands focus and commitment. We instill discipline that carries over into every aspect of life.",
+                  "We foster an environment built on mutual respect — between coaches, members, and the sport itself.",
               },
               {
                 title: "Community",
                 description:
-                  "We're a family. Every member — from beginners to competitors — is supported and encouraged.",
+                  "Boxing may be an individual sport, but we train as a team. There is strength in numbers, and we lift each other up.",
               },
               {
-                title: "Excellence",
+                title: "Self-Discipline",
                 description:
-                  "We hold ourselves to the highest standards of coaching, safety, and technique.",
+                  "The ring teaches focus and commitment. These lessons carry over into every aspect of life.",
               },
             ].map((v) => (
               <Card key={v.title} className="border-border bg-card">
@@ -84,12 +85,12 @@ const About = () => {
               <span className="text-xs uppercase tracking-wider text-muted-foreground">Photo</span>
             </div>
             <h3 className="mb-1 text-xl font-bold">Head Coach</h3>
-            <p className="mb-4 text-sm text-primary">Founder, NorCal Boxing & Benicia Boxing</p>
+            <p className="mb-4 text-sm text-primary">Founder, NorCal Boxing Club & Benicia Boxing</p>
             <p className="text-muted-foreground">
-              With years of experience in competitive and recreational boxing coaching, our head
-              coach brings passion, expertise, and a genuine love for the sport to every session.
-              His mission is to make boxing accessible, safe, and empowering for everyone who
-              walks through the door.
+              With years of experience in both competitive and recreational boxing, our head coach
+              brings passion, expertise, and a genuine commitment to each member's growth. His
+              mission is to make boxing accessible, safe, and empowering for everyone — from
+              first-timers to seasoned fighters.
             </p>
           </div>
         </div>
