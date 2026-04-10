@@ -42,7 +42,7 @@ const Contact = () => {
     <main>
       <HeroSection
         title="Contact Us"
-        subtitle="Get in touch to learn more or sign up for a free trial class."
+        subtitle="Get in touch to learn more or sign up for two free weeks of training."
       />
 
       <section className="py-16">
@@ -133,7 +133,7 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-primary" /> info@norcalboxing.com
                   </a>
                   <span className="flex items-center gap-3 text-sm text-muted-foreground">
-                    <MapPin className="h-5 w-5 shrink-0 text-primary" /> 123 Main Street, Benicia, CA 94510
+                    <MapPin className="h-5 w-5 shrink-0 text-primary" /> Fairfield, CA
                   </span>
                 </CardContent>
               </Card>

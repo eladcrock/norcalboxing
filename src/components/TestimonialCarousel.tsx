@@ -10,15 +10,15 @@ import { Card, CardContent } from "@/components/ui/card";
 const testimonials = [
   {
     name: "Mike R.",
-    text: "NorCal Boxing completely changed my life. The coaches push you to be your best while keeping it fun and safe.",
+    text: "NorCal Boxing has an incredible atmosphere. The coaches push you to be your best while keeping it fun and safe.",
   },
   {
     name: "Sarah T.",
-    text: "I started with zero boxing experience and now I feel confident and strong. The community here is incredible.",
+    text: "I started with zero boxing experience and now I feel confident and strong. The community here is like family.",
   },
   {
     name: "James L.",
-    text: "Best gym in NorCal, hands down. The private training sessions have taken my skills to the next level.",
+    text: "Best boxing gym in NorCal. The private training sessions have taken my skills to the next level.",
   },
   {
     name: "Lisa M.",

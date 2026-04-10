@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import logo from "@/assets/logo-black.png";
 
 const Footer = () => {
   return (
@@ -8,12 +9,10 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <h3 className="mb-3 text-lg font-bold">
-              <span className="text-primary">NORCAL</span> BOXING
-            </h3>
+            <img src={logo} alt="NorCal Boxing Club" className="mb-3 h-16 w-auto" />
             <p className="text-sm text-muted-foreground">
-              Train hard. Fight smart. NorCal's premier boxing gym for all skill
-              levels.
+              Clean, professional boxing training in a fun and safe environment.
+              From the same team behind Benicia Boxing & Martial Arts.
             </p>
           </div>
 
@@ -53,7 +52,7 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-primary" /> info@norcalboxing.com
               </a>
               <span className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 shrink-0 text-primary" /> 123 Main Street, Benicia, CA 94510
+                <MapPin className="h-4 w-4 shrink-0 text-primary" /> Fairfield, CA
               </span>
             </div>
             <div className="mt-4 flex gap-3">
@@ -68,7 +67,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} NorCal Boxing. All rights reserved.
+          © {new Date().getFullYear()} NorCal Boxing Club. All rights reserved.
         </div>
       </div>
     </footer>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo-black.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -17,9 +18,8 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link to="/" className="text-xl font-bold tracking-tight">
-          <span className="text-primary">NORCAL</span>{" "}
-          <span className="text-foreground">BOXING</span>
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="NorCal Boxing Club" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop nav */}
