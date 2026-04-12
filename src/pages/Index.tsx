@@ -37,11 +37,11 @@ const Index = () => {
           <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight md:text-5xl">
             Welcome <span className="text-primary">All</span>
           </h2>
-          <img src={logo} alt="NorCal Boxing Club" className="mx-auto mb-6 h-40 w-auto md:h-56 lg:h-72" />
+          <img src={logo} alt="NorCal Boxing Club" className="mx-auto mb-6 h-52 w-auto md:h-72 lg:h-96" />
           <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            NorCal Boxing Club offers professional boxing training for men, women, and children of all ages in a clean, state-of-the-art facility with experienced instructors.
+            Professional boxing training for all ages in a state-of-the-art facility.
           </p>
-          <Button asChild size="lg" className="text-base font-semibold uppercase tracking-wider">
+          <Button asChild size="lg" className="animate-fade-in text-base font-semibold uppercase tracking-wider [animation-delay:0.8s] [animation-fill-mode:backwards]">
             <Link to="/contact">Get Two Weeks Free</Link>
           </Button>
         </div>
