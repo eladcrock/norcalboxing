@@ -14,6 +14,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [showLogo, setShowLogo] = useState(true);
   const location = useLocation();
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -22,11 +23,35 @@ const Navbar = () => {
     setMobileOpen(false);
   }, [location.pathname]);
 
+  // Hide logo on home page until user scrolls past hero
+  useEffect(() => {
+    if (location.pathname !== "/") {
+      setShowLogo(true);
+      return;
+    }
+
+    setShowLogo(false);
+
+    const handleScroll = () => {
+      // Show logo after scrolling past ~60vh (the hero section)
+      const threshold = window.innerHeight * 0.5;
+      setShowLogo(window.scrollY > threshold);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [location.pathname]);
+
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="NorCal Boxing Club" className="h-14 w-auto" />
+          <img
+            src={logo}
+            alt="NorCal Boxing Club"
+            className={`h-14 w-auto transition-opacity duration-300 ${showLogo ? "opacity-100" : "opacity-0"}`}
+          />
         </Link>
 
         {/* Desktop nav */}

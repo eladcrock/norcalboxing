@@ -37,7 +37,7 @@ const Index = () => {
           <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight md:text-5xl">
             Welcome <span className="text-primary">All</span>
           </h2>
-          <img src={logo} alt="NorCal Boxing Club" className="mx-auto mb-6 h-52 w-auto md:h-72 lg:h-96" />
+          <img src={logo} alt="NorCal Boxing Club" className="mx-auto mb-6 h-64 w-auto md:h-80 lg:h-[28rem]" />
           <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
             Professional boxing training for all ages in a state-of-the-art facility.
           </p>
