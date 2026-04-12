@@ -32,9 +32,9 @@ const About = () => {
                 who can help you reach your goals in a fun and safe environment.
               </p>
               <p>
-                Boxing training helps improve physical fitness — including coordination,
-                flexibility, and strength — but the practice also reinforces some of life's
-                most valuable lessons, such as perseverance and self-control.
+                Boxing training helps improve physical fitness, including coordination,
+                flexibility, and strength. The practice also reinforces some core values,
+                 such as perseverance and self-control.
               </p>
             </div>
           </div>
