@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo-black.png";
+import benicicaLogo from "@/assets/benicia-logo.png";
 
 const Footer = () => {
   return (
