@@ -1,8 +1,14 @@
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import { toast } from "sonner";
 import logo from "@/assets/logo-black.png";
 import benicicaLogo from "@/assets/benicia-logo.png";
 
 const Footer = () => {
+  const handleSocialClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    toast("Social media coming soon, check back!");
+  };
+
   return (
     <footer className="border-t border-border bg-background">
       <div className="container mx-auto px-4 py-12">
@@ -37,12 +43,12 @@ const Footer = () => {
               </a>
             </div>
             <div className="mt-4 flex gap-3">
-              <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+              <button onClick={handleSocialClick} className="text-muted-foreground transition-colors hover:text-primary">
                 <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+              </button>
+              <button onClick={handleSocialClick} className="text-muted-foreground transition-colors hover:text-primary">
                 <Instagram className="h-5 w-5" />
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -52,7 +58,18 @@ const Footer = () => {
             Clean, professional boxing training in a fun and safe environment.
             From the same team behind Benicia Boxing & Martial Arts.
           </p>
-          © {new Date().getFullYear()} NorCal Boxing Club. All rights reserved.
+          <p className="mb-1">© {new Date().getFullYear()} NorCal Boxing Club. All rights reserved.</p>
+          <p>
+            Web Design by{" "}
+            <a href="https://nimbuswolf.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
+              Nimbus Wolf Studios
+            </a>
+            {" "}| Collaboration with{" "}
+            <a href="https://www.instagram.com/giographix" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
+              Giographix Studios
+            </a>
+            {" "}Branding
+          </p>
         </div>
       </div>
     </footer>
