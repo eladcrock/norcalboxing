@@ -59,14 +59,16 @@ const Footer = () => {
          
           <p className="mb-1">© {new Date().getFullYear()} NorCal Boxing Club. All rights reserved.</p>
           <p>
-            Web Design by{" "}
+           Branding by{" "}
+           <a href="https://www.instagram.com/giographix_/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
+              Giographix Studios
+            </a>
+         
+               {" "}| Web Design by{" "}
             <a href="https://nimbuswolf.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
               Nimbus Wolf Studios
             </a>
-            {" "}| Branding by {" "}
-            <a href="https://www.instagram.com/giographix_/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
-              Giographix Studios
-            </a>
+
             {" "}
           </p>
         </div>
