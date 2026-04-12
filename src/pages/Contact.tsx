@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import emailjs from "@emailjs/browser";
 import HeroSection from "@/components/HeroSection";
 import heroContact from "@/assets/hero-contact.jpg";
 import { Button } from "@/components/ui/button";
@@ -18,6 +19,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import { toast } from "sonner";
 
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || "";
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "";
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "";
+
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Invalid email address").max(255),
@@ -33,10 +38,25 @@ const Contact = () => {
     defaultValues: { name: "", email: "", phone: "", message: "" },
   });
 
-  const onSubmit = (data: ContactForm) => {
-    console.log("Contact form submitted:", data.name, data.email);
-    toast.success("Message sent! We'll get back to you soon.");
-    form.reset();
+  const onSubmit = async (data: ContactForm) => {
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: data.name,
+          from_email: data.email,
+          phone: data.phone || "Not provided",
+          message: data.message,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+      toast.success("Message sent! We'll get back to you soon.");
+      form.reset();
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      toast.error("Failed to send message. Please try again or email us directly.");
+    }
   };
 
   return (
@@ -90,7 +110,7 @@ const Contact = () => {
                       <FormItem>
                         <FormLabel>Phone (optional)</FormLabel>
                         <FormControl>
-                          <Input type="tel" placeholder="(707) 555-1234" {...field} />
+                          <Input type="tel" placeholder="(555) 555-1234" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -113,8 +133,8 @@ const Contact = () => {
                       </FormItem>
                     )}
                   />
-                  <Button type="submit" size="lg" className="w-full font-semibold uppercase tracking-wider">
-                    Send Message
+                  <Button type="submit" size="lg" className="w-full font-semibold uppercase tracking-wider" disabled={form.formState.isSubmitting}>
+                    {form.formState.isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </Form>
@@ -128,11 +148,11 @@ const Contact = () => {
 
               <Card className="border-border bg-card">
                 <CardContent className="space-y-4 p-6">
-                  <a href="tel:+17075551234" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
-                    <Phone className="h-5 w-5 text-primary" /> (707) 555-1234
+                  <a href="tel:+15103267401" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
+                    <Phone className="h-5 w-5 text-primary" /> Call Us
                   </a>
-                  <a href="mailto:info@norcalboxing.com" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
-                    <Mail className="h-5 w-5 text-primary" /> info@norcalboxing.com
+                  <a href="mailto:NorcalBoxingClub@gmail.com" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
+                    <Mail className="h-5 w-5 text-primary" /> NorcalBoxingClub@gmail.com
                   </a>
                   <span className="flex items-center gap-3 text-sm text-muted-foreground">
                     <MapPin className="h-5 w-5 shrink-0 text-primary" /> Fairfield, CA
