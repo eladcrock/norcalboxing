@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo-black.png";
+import benicicaLogo from "@/assets/benicia-logo.png";
 
 const Footer = () => {
   return (
@@ -14,6 +15,9 @@ const Footer = () => {
               Clean, professional boxing training in a fun and safe environment.
               From the same team behind Benicia Boxing & Martial Arts.
             </p>
+            <a href="https://beniciabma.com" target="_blank" rel="noopener noreferrer" className="mt-3 inline-block">
+              <img src={benicicaLogo} alt="Benicia Boxing & Martial Arts" className="h-10 w-auto" />
+            </a>
           </div>
 
           {/* Quick Links */}
