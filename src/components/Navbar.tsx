@@ -9,6 +9,7 @@ const navLinks = [
   { label: "About", to: "/about" },
   { label: "Programs", to: "/programs" },
   { label: "Contact", to: "/contact" },
+  { label: "Benicia BMA", to: "https://beniciabma.com", external: true },
 ];
 
 const Navbar = () => {
@@ -24,17 +25,29 @@ const Navbar = () => {
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-6 md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`text-sm font-medium uppercase tracking-wider transition-colors hover:text-primary ${
-                location.pathname === link.to ? "text-primary" : "text-muted-foreground"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.external ? (
+              <a
+                key={link.to}
+                href={link.to}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`text-sm font-medium uppercase tracking-wider transition-colors hover:text-primary ${
+                  location.pathname === link.to ? "text-primary" : "text-muted-foreground"
+                }`}
+              >
+                {link.label}
+              </Link>
+            )
+          )}
           <a
             href="tel:+17075551234"
             className="flex items-center gap-1.5 text-sm font-medium text-primary"
@@ -59,18 +72,30 @@ const Navbar = () => {
       {mobileOpen && (
         <div className="border-t border-border bg-background md:hidden">
           <div className="flex flex-col gap-1 p-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                onClick={() => setMobileOpen(false)}
-                className={`rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors hover:bg-secondary ${
-                  location.pathname === link.to ? "text-primary" : "text-muted-foreground"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.external ? (
+                <a
+                  key={link.to}
+                  href={link.to}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wider text-muted-foreground transition-colors hover:bg-secondary"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => setMobileOpen(false)}
+                  className={`rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors hover:bg-secondary ${
+                    location.pathname === link.to ? "text-primary" : "text-muted-foreground"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
             <a
               href="tel:+17075551234"
               className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-primary"
