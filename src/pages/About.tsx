@@ -89,7 +89,7 @@ const About = () => {
             <h3 className="mb-1 text-xl font-bold">Head Coach</h3>
             <p className="mb-4 text-sm text-primary">Founder, NorCal Boxing Club & Benicia Boxing</p>
             <p className="text-muted-foreground">
-              With years of experience in both competitive and recreational boxing, our head coach
+              With years of experience in both boxing and martial arts, Coach Andy
               brings passion, expertise, and a genuine commitment to each member's growth. His
               mission is to make boxing accessible, safe, and empowering for everyone, from
               first-timers to seasoned fighters.
