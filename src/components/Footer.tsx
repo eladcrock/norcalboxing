@@ -61,7 +61,7 @@ const Footer = () => {
           <p>
            Branding by{" "}
            <a href="https://www.instagram.com/giographix_/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
-              Giographix Studios
+              Giographix Studios {" "}
             </a>
          
                {" "}| Web Design by{" "}
