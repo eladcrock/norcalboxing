@@ -6,17 +6,17 @@ const Footer = () => {
   return (
     <footer className="border-t border-border bg-background">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid gap-8 md:grid-cols-2 md:items-end">
+        <div className="grid gap-8 md:grid-cols-2">
           {/* Brand */}
-          <div className="flex flex-col">
+          <div>
             <img src={logo} alt="NorCal Boxing Club" className="mb-3 h-24 w-auto" />
-            <a href="https://beniciabma.com" target="_blank" rel="noopener noreferrer" className="mt-2 inline-block">
-              <img src={benicicaLogo} alt="Benicia Boxing & Martial Arts" className="h-16 w-auto" />
-            </a>
-            <p className="mt-3 text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground">
               Clean, professional boxing training in a fun and safe environment.
               From the same team behind Benicia Boxing & Martial Arts.
             </p>
+            <a href="https://beniciabma.com" target="_blank" rel="noopener noreferrer" className="mt-3 inline-block">
+              <img src={benicicaLogo} alt="Benicia Boxing & Martial Arts" className="h-10 w-auto" />
+            </a>
           </div>
 
           {/* Contact Info */}
