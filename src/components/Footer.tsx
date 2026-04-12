@@ -64,7 +64,7 @@ const Footer = () => {
               Nimbus Wolf Studios
             </a>
             {" "}| Branding by {" "}
-            <a href="https://www.instagram.com/giographix_" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
+            <a href="https://www.instagram.com/giographix_/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
               Giographix Studios
             </a>
             {" "}
