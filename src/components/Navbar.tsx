@@ -49,11 +49,11 @@ const Navbar = () => {
             )
           )}
           <a
-            href="tel:+17075551234"
+            href="tel:+15103267401"
             className="flex items-center gap-1.5 text-sm font-medium text-primary"
           >
             <Phone className="h-4 w-4" />
-            (707) 555-1234
+            Call Us
           </a>
         </div>
 

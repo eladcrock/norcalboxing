@@ -49,11 +49,11 @@ const Footer = () => {
               Contact
             </h4>
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <a href="tel:+17075551234" className="flex items-center gap-2 hover:text-primary">
-                <Phone className="h-4 w-4 text-primary" /> (707) 555-1234
+              <a href="tel:+15103267401" className="flex items-center gap-2 hover:text-primary">
+                <Phone className="h-4 w-4 text-primary" /> Call Us
               </a>
-              <a href="mailto:info@norcalboxing.com" className="flex items-center gap-2 hover:text-primary">
-                <Mail className="h-4 w-4 text-primary" /> info@norcalboxing.com
+              <a href="mailto:NorcalBoxingClub@gmail.com" className="flex items-center gap-2 hover:text-primary">
+                <Mail className="h-4 w-4 text-primary" /> NorcalBoxingClub@gmail.com
               </a>
               <span className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 shrink-0 text-primary" /> Fairfield, CA
