@@ -23,10 +23,10 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+    <nav className="sticky top-0 z-50 border-b border-dark-foreground/10 bg-dark/95 backdrop-blur supports-[backdrop-filter]:bg-dark/80">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="NorCal Boxing Club" className="h-14 w-auto" />
+          <img src={logo} alt="NorCal Boxing Club" className="h-14 w-auto brightness-0 invert" />
         </Link>
 
         {/* Desktop nav */}
@@ -38,7 +38,7 @@ const Navbar = () => {
                 href={link.to}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary"
+                className="text-sm font-medium uppercase tracking-wider text-dark-foreground/70 transition-colors hover:text-gold"
               >
                 {link.label}
               </a>
@@ -46,8 +46,8 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`text-sm font-medium uppercase tracking-wider transition-colors hover:text-primary ${
-                  location.pathname === link.to ? "text-primary" : "text-muted-foreground"
+                className={`text-sm font-medium uppercase tracking-wider transition-colors hover:text-gold ${
+                  location.pathname === link.to ? "text-gold" : "text-dark-foreground/70"
                 }`}
               >
                 {link.label}
@@ -56,7 +56,7 @@ const Navbar = () => {
           )}
           <a
             href="tel:+15103267401"
-            className="flex items-center gap-1.5 text-sm font-medium text-primary"
+            className="flex items-center gap-1.5 text-sm font-medium text-gold"
           >
             <Phone className="h-4 w-4" />
             Call Us
@@ -74,10 +74,10 @@ const Navbar = () => {
         </Button>
       </div>
 
-      {/* Mobile menu — overlay style with animated slide */}
+      {/* Mobile menu overlay */}
       <div
         ref={menuRef}
-        className={`overflow-hidden border-t border-border bg-background transition-all duration-300 ease-in-out md:hidden ${
+        className={`overflow-hidden border-t border-dark-foreground/10 bg-dark transition-all duration-300 ease-in-out md:hidden ${
           mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 border-t-0"
         }`}
       >
@@ -89,7 +89,7 @@ const Navbar = () => {
                 href={link.to}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wider text-muted-foreground transition-colors hover:bg-secondary"
+                className="rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wider text-dark-foreground/70 transition-colors hover:bg-dark-foreground/10"
                 style={{ animationDelay: `${i * 50}ms` }}
               >
                 {link.label}
@@ -99,8 +99,8 @@ const Navbar = () => {
                 key={link.to}
                 to={link.to}
                 onClick={() => setMobileOpen(false)}
-                className={`rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors hover:bg-secondary ${
-                  location.pathname === link.to ? "text-primary" : "text-muted-foreground"
+                className={`rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors hover:bg-dark-foreground/10 ${
+                  location.pathname === link.to ? "text-gold" : "text-dark-foreground/70"
                 }`}
                 style={{ animationDelay: `${i * 50}ms` }}
               >
@@ -110,7 +110,7 @@ const Navbar = () => {
           )}
           <a
             href="tel:+15103267401"
-            className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-primary"
+            className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-gold"
           >
             <Phone className="h-4 w-4" />
             Call Us
