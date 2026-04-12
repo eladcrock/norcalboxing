@@ -160,7 +160,7 @@ const Contact = () => {
 
               <Card className="border-border bg-card">
                 <CardContent className="space-y-4 p-6">
-                  <a href="tel:+15103267401" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
+                  <a href="tel:+17077471722" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
                     <Phone className="h-5 w-5 text-primary" /> Call Us
                   </a>
 

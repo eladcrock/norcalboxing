@@ -80,7 +80,7 @@ const Navbar = () => {
             )
           )}
           <a
-            href="tel:+15103267401"
+            href="tel:+17077471722"
             className="flex items-center gap-1.5 text-sm font-medium text-primary"
           >
             <Phone className="h-4 w-4" />
@@ -134,7 +134,7 @@ const Navbar = () => {
             )
           )}
           <a
-            href="tel:+15103267401"
+            href="tel:+17077471722"
             className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-primary"
           >
             <Phone className="h-4 w-4" />

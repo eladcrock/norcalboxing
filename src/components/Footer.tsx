@@ -29,7 +29,7 @@ const Footer = () => {
               Contact
             </h4>
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <a href="tel:+15103267401" className="flex items-center gap-2 hover:text-primary">
+              <a href="tel:+17077471722" className="flex items-center gap-2 hover:text-primary">
                 <Phone className="h-4 w-4 text-primary" /> Call Us
               </a>
               <a href="mailto:NorcalBoxingClub@gmail.com" className="flex items-center gap-2 hover:text-primary">
