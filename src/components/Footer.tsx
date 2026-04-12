@@ -6,7 +6,9 @@ import benicicaLogo from "@/assets/benicia-logo.png";
 const Footer = () => {
   const handleSocialClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    toast("Social media coming soon, check back!");
+    toast("We are excited to launch social media soon, please check back!", {
+      position: "top-center",
+    });
   };
 
   return (
