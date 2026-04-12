@@ -25,17 +25,29 @@ const Navbar = () => {
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-6 md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`text-sm font-medium uppercase tracking-wider transition-colors hover:text-primary ${
-                location.pathname === link.to ? "text-primary" : "text-muted-foreground"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.external ? (
+              <a
+                key={link.to}
+                href={link.to}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`text-sm font-medium uppercase tracking-wider transition-colors hover:text-primary ${
+                  location.pathname === link.to ? "text-primary" : "text-muted-foreground"
+                }`}
+              >
+                {link.label}
+              </Link>
+            )
+          )}
           <a
             href="tel:+17075551234"
             className="flex items-center gap-1.5 text-sm font-medium text-primary"
