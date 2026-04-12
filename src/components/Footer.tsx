@@ -10,12 +10,8 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <img src={logo} alt="NorCal Boxing Club" className="mb-3 h-24 w-auto" />
-            <p className="text-sm text-muted-foreground">
-              Clean, professional boxing training in a fun and safe environment.
-              From the same team behind Benicia Boxing & Martial Arts.
-            </p>
             <a href="https://beniciabma.com" target="_blank" rel="noopener noreferrer" className="mt-3 inline-block">
-              <img src={benicicaLogo} alt="Benicia Boxing & Martial Arts" className="h-10 w-auto" />
+              <img src={benicicaLogo} alt="Benicia Boxing & Martial Arts" className="h-12 w-auto" />
             </a>
           </div>
 
@@ -52,6 +48,10 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground">
+          <p className="mb-2">
+            Clean, professional boxing training in a fun and safe environment.
+            From the same team behind Benicia Boxing & Martial Arts.
+          </p>
           © {new Date().getFullYear()} NorCal Boxing Club. All rights reserved.
         </div>
       </div>
