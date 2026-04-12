@@ -183,11 +183,7 @@ const Contact = () => {
               <div className="overflow-hidden rounded-lg border border-border">
                 <iframe
                   title="NorCal Boxing Club Location"
-<<<<<<< HEAD
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-122.04159!3d38.24940!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857040b4a9b6b1%3A0x0!2zMzIzIFcgVGV4YXMgU3QsIEZhaXJmaWVsZCwgQ0E!5e0!3m2!1sen!2sus!4v1"
-=======
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-122.0394!3d38.2494"
->>>>>>> 7c2a0a9 (update commit)
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-122.04159!3d38.24940!2s323+W+Texas+St,+Fairfield,+CA"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
