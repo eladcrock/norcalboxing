@@ -27,7 +27,7 @@ const HeroSection = ({
         />
       )}
       {/* Overlay */}
-      <div className="absolute inset-0 bg-dark/70" />
+      <div className="absolute inset-0 bg-foreground/60" />
 
       <div className="relative z-10 container mx-auto flex min-h-[50vh] flex-col justify-between px-4 py-10">
         <h1 className="mt-4 text-center text-4xl font-extrabold uppercase tracking-tight text-white md:text-6xl lg:text-7xl">

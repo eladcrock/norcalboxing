@@ -42,7 +42,7 @@ const Programs = () => {
             ].map((p) => (
               <Card key={p.title} className="border-border bg-card">
                 <CardContent className="p-8">
-                  <h3 className="mb-2 text-xl font-bold text-gold">{p.title}</h3>
+                  <h3 className="mb-2 text-xl font-bold text-primary">{p.title}</h3>
                   <p className="text-sm text-muted-foreground">{p.description}</p>
                 </CardContent>
               </Card>
@@ -52,16 +52,16 @@ const Programs = () => {
       </section>
 
       {/* Schedule info */}
-      <section className="bg-dark py-16">
+      <section className="bg-secondary py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight text-dark-foreground md:text-4xl">
-            Class <span className="text-gold">Schedule</span>
+          <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
+            Class <span className="text-primary">Schedule</span>
           </h2>
-          <p className="mx-auto mb-6 max-w-2xl text-dark-foreground/70">
+          <p className="mx-auto mb-6 max-w-2xl text-muted-foreground">
             We offer flexible class times throughout the week to fit your schedule. Contact us for the most up to date class
             times and availability.
           </p>
-          <Button asChild size="lg" className="bg-gold text-gold-foreground hover:bg-gold/90 text-base font-semibold uppercase tracking-wider">
+          <Button asChild size="lg" className="text-base font-semibold uppercase tracking-wider">
             <Link to="/contact">Get the Schedule</Link>
           </Button>
         </div>
@@ -71,22 +71,22 @@ const Programs = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="mb-8 text-center text-3xl font-bold uppercase tracking-tight md:text-4xl">
-            Clean <span className="text-gold">Shots</span>
+            Clean <span className="text-primary">Shots</span>
           </h2>
           <PhotoGallery images={galleryImages} />
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-dark py-16">
+      <section className="bg-secondary py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight text-dark-foreground md:text-4xl">
-            Get Two Weeks <span className="text-gold">Free</span>
+          <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
+            Get Two Weeks <span className="text-primary">Free</span>
           </h2>
-          <p className="mx-auto mb-8 max-w-xl text-dark-foreground/70">
+          <p className="mx-auto mb-8 max-w-xl text-muted-foreground">
            Try our 2 week free trial and see for yourself how the art of boxing can change your life! No experience necessary.
           </p>
-          <Button asChild size="lg" className="bg-gold text-gold-foreground hover:bg-gold/90 text-base font-semibold uppercase tracking-wider">
+          <Button asChild size="lg" className="text-base font-semibold uppercase tracking-wider">
             <Link to="/contact">Sign Up Now</Link>
           </Button>
         </div>
