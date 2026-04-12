@@ -42,17 +42,17 @@ const About = () => {
       </section>
 
       {/* Mission & Values */}
-      <section className="bg-secondary py-16">
+      <section className="bg-dark py-16">
         <div className="container mx-auto px-4">
-          <h2 className="mb-10 text-center text-3xl font-bold uppercase tracking-tight md:text-4xl">
-            Our <span className="text-primary">Values</span>
+          <h2 className="mb-10 text-center text-3xl font-bold uppercase tracking-tight text-dark-foreground md:text-4xl">
+            Our <span className="text-gold">Values</span>
           </h2>
           <div className="grid gap-6 md:grid-cols-3">
             {[
               {
                 title: "Respect",
                 description:
-                  "We foster an environment built on mutual respect — between coaches, members, and the sport itself.",
+                  "We foster an environment built on mutual respect between coaches, members, and the sport itself.",
               },
               {
                 title: "Community",
@@ -65,10 +65,10 @@ const About = () => {
                   "The ring teaches focus and commitment. These lessons carry over into every aspect of life.",
               },
             ].map((v) => (
-              <Card key={v.title} className="border-border bg-card">
+              <Card key={v.title} className="border-dark-foreground/10 bg-dark-foreground/5">
                 <CardContent className="p-8 text-center">
-                  <h3 className="mb-2 text-xl font-bold text-primary">{v.title}</h3>
-                  <p className="text-sm text-muted-foreground">{v.description}</p>
+                  <h3 className="mb-2 text-xl font-bold text-gold">{v.title}</h3>
+                  <p className="text-sm text-dark-foreground/70">{v.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -87,11 +87,11 @@ const About = () => {
               <span className="text-xs uppercase tracking-wider text-muted-foreground">Photo</span>
             </div>
             <h3 className="mb-1 text-xl font-bold">Head Coach</h3>
-            <p className="mb-4 text-sm text-primary">Founder, NorCal Boxing Club & Benicia Boxing</p>
+            <p className="mb-4 text-sm text-gold">Founder, NorCal Boxing Club & Benicia Boxing</p>
             <p className="text-muted-foreground">
               With years of experience in both competitive and recreational boxing, our head coach
               brings passion, expertise, and a genuine commitment to each member's growth. His
-              mission is to make boxing accessible, safe, and empowering for everyone — from
+              mission is to make boxing accessible, safe, and empowering for everyone, from
               first-timers to seasoned fighters.
             </p>
           </div>

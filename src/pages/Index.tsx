@@ -12,19 +12,19 @@ const programs = [
     icon: Users,
     title: "Group Classes",
     description:
-      "High-energy group boxing sessions for all skill levels. Build strength, speed, and technique alongside fellow fighters in a fun and supportive environment.",
+      "Covering boxing fundamentals from the ground up, building on knowledge of technique, simultaneously improving body composition, while allowing for stress relief and improved mental health.",
   },
   {
     icon: User,
     title: "Private Training",
     description:
-      "One-on-one sessions with our experienced coaches. Tailored to your goals — whether you're preparing to compete or just getting started.",
+      "Personalized coaching tailored to your goals. Ideal for competition prep, accelerated learning, or focused technique work with our experienced instructors.",
   },
   {
     icon: Baby,
     title: "Youth Boxing",
     description:
-      "Structured classes for kids and teens that build confidence, discipline, and fitness. We teach perseverance and self-control through the sweet science.",
+      "Structured classes for ages 12–17. We teach technique, discipline, and sportsmanship, helping kids improve coordination, flexibility, and strength, including life lessons like perseverance and self-control.",
   },
 ];
 
@@ -32,16 +32,16 @@ const Index = () => {
   return (
     <main>
       {/* Home Hero with Logo */}
-      <section className="flex min-h-[60vh] items-center justify-center bg-secondary py-16">
+      <section className="flex min-h-[60vh] items-center justify-center bg-dark py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight md:text-5xl">
-            Welcome <span className="text-primary">All</span>
+          <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight text-dark-foreground md:text-5xl">
+            Welcome <span className="text-gold">All</span>
           </h2>
-          <img src={logo} alt="NorCal Boxing Club" className="mx-auto mb-6 h-52 w-auto md:h-72 lg:h-96" />
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
+          <img src={logo} alt="NorCal Boxing Club" className="mx-auto mb-6 h-52 w-auto brightness-0 invert md:h-72 lg:h-96" />
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-dark-foreground/70 md:text-xl">
             Professional boxing training for all ages in a state-of-the-art facility.
           </p>
-          <Button asChild size="lg" className="animate-fade-in text-base font-semibold uppercase tracking-wider [animation-delay:0.8s] [animation-fill-mode:backwards]">
+          <Button asChild size="lg" className="animate-fade-in bg-gold text-gold-foreground hover:bg-gold/90 text-base font-semibold uppercase tracking-wider [animation-delay:0.8s] [animation-fill-mode:backwards]">
             <Link to="/contact">Get Two Weeks Free</Link>
           </Button>
         </div>
@@ -51,7 +51,7 @@ const Index = () => {
       <section className="py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
-            Community & <span className="text-primary">Camaraderie</span>
+            Community & <span className="text-gold">Camaraderie</span>
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
             Boxing may be an individual sport, but we work out, train, and get better as a team.
@@ -70,19 +70,19 @@ const Index = () => {
       </section>
 
       {/* Programs */}
-      <section className="bg-secondary py-16">
+      <section className="bg-dark py-16">
         <div className="container mx-auto px-4">
-          <h2 className="mb-10 text-center text-3xl font-bold uppercase tracking-tight md:text-4xl">
-            Our <span className="text-primary">Programs</span>
+          <h2 className="mb-10 text-center text-3xl font-bold uppercase tracking-tight text-dark-foreground md:text-4xl">
+            Our <span className="text-gold">Programs</span>
           </h2>
           <div className="grid gap-6 md:grid-cols-3">
             {programs.map((p) => (
-              <Card key={p.title} className="border-border bg-card transition-transform hover:scale-[1.02]">
+              <Card key={p.title} className="border-dark-foreground/10 bg-dark-foreground/5 transition-transform hover:scale-[1.02]">
                 <CardContent className="flex flex-col items-center p-8 text-center">
-                  <p.icon className="mb-4 h-10 w-10 text-primary" />
-                  <h3 className="mb-2 text-xl font-bold">{p.title}</h3>
-                  <p className="mb-4 text-sm text-muted-foreground">{p.description}</p>
-                  <Button asChild variant="outline" size="sm">
+                  <p.icon className="mb-4 h-10 w-10 text-gold" />
+                  <h3 className="mb-2 text-xl font-bold text-dark-foreground">{p.title}</h3>
+                  <p className="mb-4 text-sm text-dark-foreground/60">{p.description}</p>
+                  <Button asChild variant="outline" size="sm" className="border-gold/50 text-gold hover:bg-gold/10 hover:text-gold">
                     <Link to="/programs">
                       Learn More <ArrowRight className="ml-1 h-4 w-4" />
                     </Link>
@@ -98,16 +98,16 @@ const Index = () => {
       <TestimonialCarousel />
 
       {/* CTA */}
-      <section className="py-16">
+      <section className="bg-dark py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
-            Get Two Weeks of Training <span className="text-primary">For Free</span>!
+          <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight text-dark-foreground md:text-4xl">
+            Get Two Weeks of Training <span className="text-gold">For Free</span>!
           </h2>
-          <p className="mx-auto mb-8 max-w-xl text-muted-foreground">
+          <p className="mx-auto mb-8 max-w-xl text-dark-foreground/70">
             Come check out our clean, state-of-the-art facility and meet our professional
-            instructors. No experience necessary — just bring your determination.
+            instructors. No experience necessary, just bring your determination.
           </p>
-          <Button asChild size="lg" className="text-base font-semibold uppercase tracking-wider">
+          <Button asChild size="lg" className="bg-gold text-gold-foreground hover:bg-gold/90 text-base font-semibold uppercase tracking-wider">
             <Link to="/contact">Sign Up Now</Link>
           </Button>
         </div>

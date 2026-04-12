@@ -28,10 +28,10 @@ const testimonials = [
 
 const TestimonialCarousel = () => {
   return (
-    <section className="bg-secondary py-16">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         <h2 className="mb-10 text-center text-3xl font-bold uppercase tracking-tight md:text-4xl">
-          What Our <span className="text-primary">Members</span> Say
+          What Our <span className="text-gold">Members</span> Say
         </h2>
         <Carousel className="mx-auto max-w-3xl" opts={{ loop: true }}>
           <CarouselContent>
@@ -42,7 +42,7 @@ const TestimonialCarousel = () => {
                     <p className="mb-4 text-lg italic text-foreground">
                       "{t.text}"
                     </p>
-                    <span className="font-semibold text-primary">— {t.name}</span>
+                    <span className="font-semibold text-gold">- {t.name}</span>
                   </CardContent>
                 </Card>
               </CarouselItem>
