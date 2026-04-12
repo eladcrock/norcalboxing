@@ -63,11 +63,11 @@ const Footer = () => {
             <a href="https://nimbuswolf.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
               Nimbus Wolf Studios
             </a>
-            {" "}| Collaboration with{" "}
+            {" "}| Branding by {" "}
             <a href="https://www.instagram.com/giographix" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
               Giographix Studios
             </a>
-            {" "}Branding
+            {" "}
           </p>
         </div>
       </div>
