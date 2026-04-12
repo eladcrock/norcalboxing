@@ -48,6 +48,10 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground">
+          <p className="mb-2">
+            Clean, professional boxing training in a fun and safe environment.
+            From the same team behind Benicia Boxing & Martial Arts.
+          </p>
           © {new Date().getFullYear()} NorCal Boxing Club. All rights reserved.
         </div>
       </div>
