@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -15,6 +15,12 @@ const navLinks = [
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [location.pathname]);
 
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
@@ -68,44 +74,49 @@ const Navbar = () => {
         </Button>
       </div>
 
-      {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="border-t border-border bg-background md:hidden">
-          <div className="flex flex-col gap-1 p-4">
-            {navLinks.map((link) =>
-              link.external ? (
-                <a
-                  key={link.to}
-                  href={link.to}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wider text-muted-foreground transition-colors hover:bg-secondary"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  onClick={() => setMobileOpen(false)}
-                  className={`rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors hover:bg-secondary ${
-                    location.pathname === link.to ? "text-primary" : "text-muted-foreground"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
-            <a
-              href="tel:+15103267401"
-              className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-primary"
-            >
-              <Phone className="h-4 w-4" />
-              Call Us
-            </a>
-          </div>
+      {/* Mobile menu — overlay style with animated slide */}
+      <div
+        ref={menuRef}
+        className={`overflow-hidden border-t border-border bg-background transition-all duration-300 ease-in-out md:hidden ${
+          mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 border-t-0"
+        }`}
+      >
+        <div className="flex flex-col gap-1 p-4">
+          {navLinks.map((link, i) =>
+            link.external ? (
+              <a
+                key={link.to}
+                href={link.to}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wider text-muted-foreground transition-colors hover:bg-secondary"
+                style={{ animationDelay: `${i * 50}ms` }}
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => setMobileOpen(false)}
+                className={`rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors hover:bg-secondary ${
+                  location.pathname === link.to ? "text-primary" : "text-muted-foreground"
+                }`}
+                style={{ animationDelay: `${i * 50}ms` }}
+              >
+                {link.label}
+              </Link>
+            )
+          )}
+          <a
+            href="tel:+15103267401"
+            className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-primary"
+          >
+            <Phone className="h-4 w-4" />
+            Call Us
+          </a>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
