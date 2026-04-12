@@ -50,7 +50,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="NorCal Boxing Club"
-            className={`h-14 w-auto transition-opacity duration-300 ${showLogo ? "opacity-100" : "opacity-0"}`}
+            className={`h-20 w-auto transition-opacity duration-300 ${showLogo ? "opacity-100" : "opacity-0"}`}
           />
         </Link>
 
