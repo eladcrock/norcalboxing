@@ -55,9 +55,14 @@ const Footer = () => {
               <a href="mailto:NorcalBoxingClub@gmail.com" className="flex items-center gap-2 hover:text-primary">
                 <Mail className="h-4 w-4 text-primary" /> NorcalBoxingClub@gmail.com
               </a>
-              <span className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 shrink-0 text-primary" /> Fairfield, CA
-              </span>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=323+W+Texas+St+Fairfield+CA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-primary"
+              >
+                <MapPin className="h-4 w-4 shrink-0 text-primary" /> 323 W Texas St, Fairfield, CA
+              </a>
             </div>
             <div className="mt-4 flex gap-3">
               <a href="#" className="text-muted-foreground transition-colors hover:text-primary">

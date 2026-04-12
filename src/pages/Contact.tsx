@@ -154,17 +154,29 @@ const Contact = () => {
                   <a href="mailto:NorcalBoxingClub@gmail.com" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
                     <Mail className="h-5 w-5 text-primary" /> NorcalBoxingClub@gmail.com
                   </a>
-                  <span className="flex items-center gap-3 text-sm text-muted-foreground">
-                    <MapPin className="h-5 w-5 shrink-0 text-primary" /> Fairfield, CA
-                  </span>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=323+W+Texas+St+Fairfield+CA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary"
+                  >
+                    <MapPin className="h-5 w-5 shrink-0 text-primary" /> 323 W Texas St, Fairfield, CA
+                  </a>
                 </CardContent>
               </Card>
 
-              {/* Map placeholder */}
-              <div className="flex aspect-video items-center justify-center rounded-lg border border-border bg-secondary">
-                <span className="text-sm uppercase tracking-wider text-muted-foreground">
-                  Map Placeholder
-                </span>
+              {/* Map */}
+              <div className="overflow-hidden rounded-lg border border-border">
+                <iframe
+                  title="NorCal Boxing Club Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-122.0394!3d38.2494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z323 W Texas St, Fairfield, CA!5e0!3m2!1sen!2sus!4v1700000000000"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
 
               {/* Social */}
