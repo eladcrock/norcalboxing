@@ -19,10 +19,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import { toast } from "sonner";
 
-const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || "";
-const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "";
-const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "";
-
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Invalid email address").max(255),
@@ -41,16 +37,18 @@ const Contact = () => {
   const onSubmit = async (data: ContactForm) => {
     try {
       await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
+        "service_b42bhuu",
+        "template_x4qn63x",
         {
-          from_name: data.name,
-          from_email: data.email,
+          to_name: "NorCal Boxing Club",
+          name: data.name,
+          email: data.email,
           phone: data.phone || "Not provided",
           message: data.message,
         },
-        EMAILJS_PUBLIC_KEY
+        "JjNuUI3DS14R6QOde"
       );
+
       toast.success("Message sent! We'll get back to you soon.");
       form.reset();
     } catch (error) {
@@ -70,13 +68,16 @@ const Contact = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid gap-10 md:grid-cols-2">
-            {/* Form */}
+
+            {/* FORM */}
             <div>
               <h2 className="mb-6 text-2xl font-bold uppercase tracking-tight">
                 Send Us a <span className="text-primary">Message</span>
               </h2>
+
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+
                   <FormField
                     control={form.control}
                     name="name"
@@ -90,6 +91,7 @@ const Contact = () => {
                       </FormItem>
                     )}
                   />
+
                   <FormField
                     control={form.control}
                     name="email"
@@ -103,6 +105,7 @@ const Contact = () => {
                       </FormItem>
                     )}
                   />
+
                   <FormField
                     control={form.control}
                     name="phone"
@@ -116,6 +119,7 @@ const Contact = () => {
                       </FormItem>
                     )}
                   />
+
                   <FormField
                     control={form.control}
                     name="message"
@@ -133,15 +137,23 @@ const Contact = () => {
                       </FormItem>
                     )}
                   />
-                  <Button type="submit" size="lg" className="w-full font-semibold uppercase tracking-wider" disabled={form.formState.isSubmitting}>
+
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full font-semibold uppercase tracking-wider"
+                    disabled={form.formState.isSubmitting}
+                  >
                     {form.formState.isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
+
                 </form>
               </Form>
             </div>
 
-            {/* Info */}
+            {/* INFO */}
             <div className="space-y-6">
+
               <h2 className="mb-6 text-2xl font-bold uppercase tracking-tight">
                 Get in <span className="text-primary">Touch</span>
               </h2>
@@ -151,46 +163,55 @@ const Contact = () => {
                   <a href="tel:+15103267401" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
                     <Phone className="h-5 w-5 text-primary" /> Call Us
                   </a>
+
                   <a href="mailto:NorcalBoxingClub@gmail.com" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
                     <Mail className="h-5 w-5 text-primary" /> NorcalBoxingClub@gmail.com
                   </a>
+
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=323+W+Texas+St+Fairfield+CA"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary"
                   >
-                    <MapPin className="h-5 w-5 shrink-0 text-primary" /> 323 W Texas St, Fairfield, CA
+                    <MapPin className="h-5 w-5 text-primary" />
+                    323 W Texas St, Fairfield, CA
                   </a>
                 </CardContent>
               </Card>
 
-              {/* Map */}
               <div className="overflow-hidden rounded-lg border border-border">
                 <iframe
                   title="NorCal Boxing Club Location"
+<<<<<<< HEAD
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-122.04159!3d38.24940!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857040b4a9b6b1%3A0x0!2zMzIzIFcgVGV4YXMgU3QsIEZhaXJmaWVsZCwgQ0E!5e0!3m2!1sen!2sus!4v1"
+=======
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-122.0394!3d38.2494"
+>>>>>>> 7c2a0a9 (update commit)
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
 
-              {/* Social */}
               <div>
-                <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider">Follow Us</h3>
+                <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider">
+                  Follow Us
+                </h3>
+
                 <div className="flex gap-3">
-                  <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                  <a href="#" className="text-muted-foreground hover:text-primary">
                     <Facebook className="h-6 w-6" />
                   </a>
-                  <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+
+                  <a href="#" className="text-muted-foreground hover:text-primary">
                     <Instagram className="h-6 w-6" />
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
