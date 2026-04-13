@@ -9,20 +9,20 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
   {
-    name: "Mike R.",
-    text: "NorCal Boxing has an incredible atmosphere. The coaches push you to be your best while keeping it fun and safe.",
+    name: "Efrain",
+    text: "Amazing experience and the coaches do a very good job in engaging with you and focusing in the moment! I feel welcome and it feels like I joined a family.",
   },
   {
-    name: "Sarah T.",
-    text: "I started with zero boxing experience and now I feel confident and strong. The community here is like family.",
+    name: "Idora S.",
+    text: "Andy the owner is very welcoming as are all of the instructors. They teach respect and have the proper training for children... Love the positive approach to teaching.",
   },
   {
-    name: "James L.",
-    text: "Best boxing gym in NorCal. The private training sessions have taken my skills to the next level.",
+    name: "Rod N.",
+    text: "Very nice gym for traditional boxing lessons. Facility is clean and instructors are very friendly, knowledgeable and competent.",
   },
   {
-    name: "Lisa M.",
-    text: "My son loves the youth program! Great coaches who really care about teaching discipline and respect.",
+    name: "Debra N.",
+    text: "The people who work here are kind and so motivated to give these kids the best experience every single time. My son is over the moon!",
   },
 ];
 

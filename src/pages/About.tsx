@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import heroAbout from "@/assets/hero-about.jpg";
+import headshot from "@/assets/headshot.png";
 import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
@@ -83,8 +84,12 @@ const About = () => {
             <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight md:text-4xl">
               Meet the <span className="text-primary">Coach</span>
             </h2>
-            <div className="mx-auto mb-6 flex h-32 w-32 items-center justify-center rounded-full bg-secondary">
-              <span className="text-xs uppercase tracking-wider text-muted-foreground">Photo</span>
+            <div className="mx-auto mb-6 h-32 w-32 overflow-hidden rounded-full">
+              <img
+                src={headshot}
+                alt="Head Coach"
+                className="h-full w-full object-cover"
+              />
             </div>
             <h3 className="mb-1 text-xl font-bold">Head Coach</h3>
             <p className="mb-4 text-sm text-primary">Founder, NorCal Boxing Club & Benicia Boxing</p>

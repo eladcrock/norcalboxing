@@ -77,7 +77,6 @@ const Contact = () => {
 
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-
                   <FormField
                     control={form.control}
                     name="name"
@@ -146,14 +145,12 @@ const Contact = () => {
                   >
                     {form.formState.isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
-
                 </form>
               </Form>
             </div>
 
             {/* INFO */}
             <div className="space-y-6">
-
               <h2 className="mb-6 text-2xl font-bold uppercase tracking-tight">
                 Get in <span className="text-primary">Touch</span>
               </h2>
@@ -161,7 +158,7 @@ const Contact = () => {
               <Card className="border-border bg-card">
                 <CardContent className="space-y-4 p-6">
                   <a href="tel:+17077471722" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
-                    <Phone className="h-5 w-5 text-primary" /> Call Us
+                    <Phone className="h-5 w-5 text-primary" /> (707) 747-1722
                   </a>
 
                   <a href="mailto:NorcalBoxingClub@gmail.com" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
@@ -169,13 +166,13 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=323+W+Texas+St+Fairfield+CA"
+                    href="https://www.google.com/maps/search/?api=1&query=323+W+Texas+St+Fairfield+CA+94533"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary"
                   >
                     <MapPin className="h-5 w-5 text-primary" />
-                    323 W Texas St, Fairfield, CA
+                    323 W Texas St, Fairfield, CA 94533
                   </a>
                 </CardContent>
               </Card>
@@ -183,12 +180,13 @@ const Contact = () => {
               <div className="overflow-hidden rounded-lg border border-border">
                 <iframe
                   title="NorCal Boxing Club Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-122.04159!3d38.24940!2s323+W+Texas+St,+Fairfield,+CA"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.962136017277!2d-122.0431355!3d38.2514838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085138f5370d051%3A0xc3f8f906e5d0d829!2s323%20W%20Texas%20St%2C%20Fairfield%2C%20CA%2094533!5e0!3m2!1sen!2sus!4v1715456000000!5m2!1sen!2sus"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
 
@@ -196,18 +194,15 @@ const Contact = () => {
                 <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider">
                   Follow Us
                 </h3>
-
                 <div className="flex gap-3">
                   <a href="#" className="text-muted-foreground hover:text-primary">
                     <Facebook className="h-6 w-6" />
                   </a>
-
                   <a href="#" className="text-muted-foreground hover:text-primary">
                     <Instagram className="h-6 w-6" />
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

@@ -5,10 +5,27 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-const galleryImages = Array.from({ length: 8 }, (_, i) => ({
-  src: `/placeholder.svg`,
-  alt: `Training photo ${i + 1}`,
-}));
+// ✅ Added image imports
+import box4 from "@/assets/box4.jpg";
+import box6 from "@/assets/box6.jpg";
+import boxM from "@/assets/boxM.png";
+import box2 from "@/assets/box2.jpg";
+import boxG from "@/assets/boxG.png";
+import box9 from "@/assets/box9.jpg";
+import box8 from "@/assets/box8.jpg";
+import ring from "@/assets/ring.jpg";
+
+// ✅ Replaced galleryImages
+const galleryImages = [
+  { src: box4, alt: "Training photo 1" },
+  { src: box6, alt: "Training photo 2" },
+  { src: boxM, alt: "Training photo 3" },
+  { src: box2, alt: "Training photo 4" },
+  { src: boxG, alt: "Training photo 5" },
+  { src: box9, alt: "Training photo 6" },
+  { src: box8, alt: "Training photo 7" },
+  { src: ring, alt: "Training photo 8" },
+];
 
 const Programs = () => {
   return (

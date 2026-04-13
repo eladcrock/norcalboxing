@@ -22,9 +22,11 @@ const PhotoGallery = ({ images }: PhotoGalleryProps) => {
             onClick={() => setSelected(i)}
             className="group relative aspect-square overflow-hidden rounded-lg bg-secondary"
           >
-            <div className="flex h-full w-full items-center justify-center text-muted-foreground transition-colors group-hover:text-primary">
-              <span className="text-xs uppercase tracking-wider">{img.alt}</span>
-            </div>
+            <img
+              src={img.src}
+              alt={img.alt}
+              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute inset-0 border border-transparent transition-colors group-hover:border-primary rounded-lg" />
           </button>
         ))}
@@ -36,11 +38,11 @@ const PhotoGallery = ({ images }: PhotoGalleryProps) => {
             <DialogTitle>Gallery image</DialogTitle>
           </VisuallyHidden>
           {selected !== null && (
-            <div className="flex aspect-video items-center justify-center rounded bg-secondary text-muted-foreground">
-              <span className="text-sm uppercase tracking-wider">
-                {images[selected].alt}
-              </span>
-            </div>
+            <img
+              src={images[selected].src}
+              alt={images[selected].alt}
+              className="w-full h-auto rounded"
+            />
           )}
         </DialogContent>
       </Dialog>
