@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import { toast } from "sonner";
 import logo from "@/assets/logo-black.png";
@@ -57,7 +58,11 @@ const Footer = () => {
 
         <div className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground">
          
-          <p className="mb-1">© {new Date().getFullYear()} NorCal Boxing Club. All rights reserved.</p>
+          <p className="mb-1">
+            © {new Date().getFullYear()} NorCal Boxing Club. All rights reserved.
+            {" "}|{" "}
+            <Link to="/privacy" className="underline hover:text-primary">Privacy Policy</Link>
+          </p>
           <p>
            Branding by{" "}
            <a href="https://www.instagram.com/giographix_/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
