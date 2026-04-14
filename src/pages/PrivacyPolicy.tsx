@@ -1,4 +1,6 @@
-const PrivacyPolicy = () => {
+import { forwardRef } from "react";
+
+const PrivacyPolicy = forwardRef<HTMLElement>((_, ref) => {
   return (
     <main className="min-h-screen bg-background">
       <section className="py-16">
