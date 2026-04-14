@@ -161,7 +161,14 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-primary" /> (707) 747-1722
                   </a>
 
-                  <a href="mailto:info@norcalboxingclub.com" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary">
+                  <a
+                    href="mailto:info@norcalboxingclub.com"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.location.href = "mailto:info@norcalboxingclub.com";
+                    }}
+                    className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary"
+                  >
                     <Mail className="h-5 w-5 text-primary" /> info@norcalboxingclub.com
                   </a>
 

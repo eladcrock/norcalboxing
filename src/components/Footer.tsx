@@ -33,7 +33,14 @@ const Footer = () => {
               <a href="tel:+17077471722" className="flex items-center gap-2 hover:text-primary">
                 <Phone className="h-4 w-4 text-primary" /> Call Us
               </a>
-              <a href="mailto:info@norcalboxingclub.com" className="flex items-center gap-2 hover:text-primary">
+              <a
+                href="mailto:info@norcalboxingclub.com"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "mailto:info@norcalboxingclub.com";
+                }}
+                className="flex items-center gap-2 hover:text-primary"
+              >
                 <Mail className="h-4 w-4 text-primary" /> info@norcalboxingclub.com
               </a>
               <a
