@@ -1,6 +1,8 @@
-const PrivacyPolicy = () => {
+import { forwardRef } from "react";
+
+const PrivacyPolicy = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <main className="min-h-screen bg-background">
+    <main ref={ref} className="min-h-screen bg-background">
       <section className="py-16">
         <div className="container mx-auto max-w-3xl px-4">
           <h1 className="mb-8 text-3xl font-bold uppercase tracking-tight">
@@ -228,6 +230,8 @@ const PrivacyPolicy = () => {
       </section>
     </main>
   );
-};
+});
+
+PrivacyPolicy.displayName = "PrivacyPolicy";
 
 export default PrivacyPolicy;
