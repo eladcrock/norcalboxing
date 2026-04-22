@@ -41,6 +41,8 @@ const Contact = () => {
         "template_x4qn63x",
         {
           to_name: "NorCal Boxing Club",
+          to_email: "info@norcalboxingclub.com",
+          reply_to: data.email,
           name: data.name,
           email: data.email,
           phone: data.phone || "Not provided",

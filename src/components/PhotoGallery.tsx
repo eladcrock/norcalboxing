@@ -4,7 +4,6 @@ import {
   DialogContent,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 interface PhotoGalleryProps {
   images: { src: string; alt: string }[];
@@ -34,9 +33,7 @@ const PhotoGallery = ({ images }: PhotoGalleryProps) => {
 
       <Dialog open={selected !== null} onOpenChange={() => setSelected(null)}>
         <DialogContent className="max-w-3xl border-border bg-card p-2">
-          <VisuallyHidden>
-            <DialogTitle>Gallery image</DialogTitle>
-          </VisuallyHidden>
+          <DialogTitle className="sr-only">Gallery image</DialogTitle>
           {selected !== null && (
             <img
               src={images[selected].src}
