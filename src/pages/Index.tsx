@@ -38,7 +38,7 @@ const Index = () => {
           <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight md:text-5xl">
             Welcome <span className="text-primary">All</span>
           </h2>
-          <img src={logo} alt="NorCal Boxing Club" className="mx-auto mb-6 h-64 w-auto md:h-80 lg:h-[28rem]" />
+          <img src={logo} alt="Nor Cal Boxing Club" className="mx-auto mb-6 h-64 w-auto md:h-80 lg:h-[28rem]" />
           <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
             Professional boxing training for all ages in a state-of-the-art facility.
           </p>
@@ -58,12 +58,12 @@ const Index = () => {
             Boxing may be an individual sport, but we work out, train, and get better as a team.
             There is strength in numbers, and together we can help you achieve your health, fitness,
             and training goals in a fun and safe environment. From the same team that built
-            Benicia Boxing & Martial Arts, NorCal Boxing Club brings world-class boxing instruction
+            Benicia Boxing & Martial Arts, Nor Cal Boxing Club brings world-class boxing instruction
             to Fairfield.
           </p>
           <img
             src={groupPhoto}
-            alt="NorCal Boxing Club group photo"
+            alt="Nor Cal Boxing Club group photo"
             className="mx-auto mt-8 max-w-3xl rounded-lg shadow-lg w-full"
             loading="lazy"
           />

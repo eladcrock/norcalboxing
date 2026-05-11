@@ -40,7 +40,7 @@ const Contact = () => {
         "service_b42bhuu",
         "template_x4qn63x",
         {
-          to_name: "NorCal Boxing Club",
+          to_name: "Nor Cal Boxing Club",
           to_email: "info@norcalboxingclub.com",
           reply_to: data.email,
           name: data.name,
@@ -188,7 +188,7 @@ const Contact = () => {
 
               <div className="overflow-hidden rounded-lg border border-border">
                 <iframe
-                  title="NorCal Boxing Club Location"
+                  title="Nor Cal Boxing Club Location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.962136017277!2d-122.0431355!3d38.2514838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085138f5370d051%3A0xc3f8f906e5d0d829!2s323%20W%20Texas%20St%2C%20Fairfield%2C%20CA%2094533!5e0!3m2!1sen!2sus!4v1715456000000!5m2!1sen!2sus"
                   width="100%"
                   height="300"

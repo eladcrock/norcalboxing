@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-2">
           {/* Brand */}
           <div>
-            <img src={logo} alt="NorCal Boxing Club" className="mb-3 h-24 w-auto" />
+            <img src={logo} alt="Nor Cal Boxing Club" className="mb-3 h-24 w-auto" />
             <a href="https://beniciabma.com" target="_blank" rel="noopener noreferrer" className="mt-3 inline-block">
               <img src={benicicaLogo} alt="Benicia Boxing & Martial Arts" className="h-12 w-auto" />
             </a>
@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground">
          
           <p className="mb-1">
-            © {new Date().getFullYear()} NorCal Boxing Club. All rights reserved.
+            © {new Date().getFullYear()} Nor Cal Boxing Club. All rights reserved.
             {" "}|{" "}
             <Link to="/privacy" className="underline hover:text-primary">Privacy Policy</Link>
           </p>

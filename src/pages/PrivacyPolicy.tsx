@@ -18,7 +18,7 @@ const PrivacyPolicy = forwardRef<HTMLElement>((_, ref) => {
                 Introduction
               </h2>
               <p>
-                NorCal Boxing Club ("we," "us," or "our") operates the website{" "}
+                Nor Cal Boxing Club ("we," "us," or "our") operates the website{" "}
                 <span className="text-foreground">norcalboxingclub.com</span>. This
                 Privacy Policy explains how we collect, use, disclose, and
                 safeguard your information when you visit our website. By using

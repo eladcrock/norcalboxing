@@ -52,7 +52,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2">
           <img
             src={logo}
-            alt="NorCal Boxing Club"
+            alt="Nor Cal Boxing Club"
             className={`h-20 w-auto transition-opacity duration-300 ${showLogo ? "opacity-100" : "opacity-0"}`}
           />
         </Link>
