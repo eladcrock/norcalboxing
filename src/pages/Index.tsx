@@ -5,7 +5,7 @@ import { Users, User, Baby } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import MembershipCTA from "@/components/MembershipCTA";
-import logo from "@/assets/logo-secondary.png";
+import logo from "@/assets/logo-black.png";
 import groupPhoto from "@/assets/hero-home.jpg";
 
 const programs = [
@@ -35,7 +35,10 @@ const Index = () => {
       {/* Home Hero with Logo */}
       <section className="flex min-h-[60vh] items-center justify-center bg-secondary py-16">
         <div className="container mx-auto px-4 text-center">
-          <img src={logo} alt="Nor Cal Boxing Club" className="mx-auto mb-6 w-full max-w-3xl h-auto" />
+          <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight md:text-5xl">
+            Welcome <span className="text-primary">All</span>
+          </h2>
+          <img src={logo} alt="Nor Cal Boxing Club" className="mx-auto mb-6 h-64 w-auto md:h-80 lg:h-[28rem]" />
           <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
             Professional boxing training for all ages in a state-of-the-art facility.
           </p>
