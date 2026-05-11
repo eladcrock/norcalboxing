@@ -81,15 +81,15 @@ const Index = () => {
                 <CardContent className="flex flex-col items-center p-8 text-center">
                   <p.icon className="mb-4 h-10 w-10 text-primary" />
                   <h3 className="mb-2 text-xl font-bold">{p.title}</h3>
-                  <p className="mb-4 text-sm text-muted-foreground">{p.description}</p>
-                  <Button asChild variant="outline" size="sm">
-                    <Link to="/programs">
-                      Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                    </Link>
-                  </Button>
+                  <p className="text-sm text-muted-foreground">{p.description}</p>
                 </CardContent>
               </Card>
             ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Button asChild size="lg" className="text-base font-semibold uppercase tracking-wider">
+              <Link to="/contact">Sign Up For Your Free 2 Week Trial</Link>
+            </Button>
           </div>
         </div>
       </section>
