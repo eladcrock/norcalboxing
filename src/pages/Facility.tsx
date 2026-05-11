@@ -8,6 +8,7 @@ const Facility = () => {
     <main>
       <HeroSection
         backgroundImage={heroFacility}
+        imageClassName="absolute inset-0 h-full w-full object-contain object-center"
         title="Our Facility"
         subtitle="A clean, modern, fully-equipped boxing gym in Fairfield."
       />
