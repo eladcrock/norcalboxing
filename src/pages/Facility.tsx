@@ -7,7 +7,7 @@ const Facility = () => {
   return (
     <main>
       <HeroSection
-        backgroundImage={heroPrograms}
+        backgroundImage={heroFacility}
         title="Our Facility"
         subtitle="A clean, modern, fully-equipped boxing gym in Fairfield."
       />
