@@ -90,7 +90,7 @@ const About = () => {
             <h2 className="mb-8 text-center text-3xl font-bold uppercase tracking-tight md:text-4xl">
               Benefits of <span className="text-primary">Boxing</span>
             </h2>
-            <ul className="grid gap-3 text-muted-foreground sm:grid-cols-2">
+            <ul className="grid gap-3 text-secondary-foreground/85 sm:grid-cols-2">
               {[
                 "Enhanced Cardiovascular Health",
                 "Improved Core Stability and Total-Body Strength",
