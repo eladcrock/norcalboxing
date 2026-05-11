@@ -81,6 +81,13 @@ const Navbar = () => {
               </Link>
             )
           )}
+          <button
+            onClick={() => toast("We are excited to launch social media soon, please check back!", { position: "top-center" })}
+            aria-label="Facebook"
+            className="text-muted-foreground transition-colors hover:text-primary"
+          >
+            <Facebook className="h-5 w-5" />
+          </button>
           <a
             href="https://www.instagram.com/norcalboxingclub/"
             target="_blank"
