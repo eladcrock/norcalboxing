@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Instagram, Facebook } from "lucide-react";
+import { Menu, X, Instagram, Facebook } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-black.png";
@@ -108,13 +108,6 @@ const Navbar = () => {
               <path d="M14.84 18.96l-1.86-3.05c-.36-.6.07-1.36.76-1.36l3.56-.04c.69 0 1.13.74.78 1.34l-1.7 2.95c-.45.77-1.59.86-2.15.16zm-2.5-7.39V3.5c0-.79-.73-1.36-1.5-1.18l-3.49.79c-.74.17-1.16.95-.91 1.67l2.61 7.32c.32.91 1.6.91 1.92 0l1.37-.53zm6.21-1.21l-2.66.65c-.69.17-1.4-.34-1.4-1.05V6.7c0-.74.74-1.25 1.43-1.01l2.66.94c.93.33.92 1.66-.03 1.97zM9.05 19.61L7 17.04c-.5-.62-.06-1.54.74-1.54h2.94c.78 0 1.23.88.78 1.51l-1.69 2.49c-.42.62-1.32.7-1.72.11zm-3.42-7.13c.45.67 1.49.55 1.78-.21l.75-2c.27-.71-.21-1.5-.97-1.62l-3.39-.5c-.85-.13-1.49.79-1.04 1.52l2.87 4.81z"/>
             </svg>
           </a>
-          <a
-            href="tel:+17077471722"
-            className="flex items-center gap-1.5 text-sm font-medium text-primary"
-          >
-            <Phone className="h-4 w-4" />
-            Call Us
-          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -162,13 +155,6 @@ const Navbar = () => {
               </Link>
             )
           )}
-          <a
-            href="tel:+17077471722"
-            className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-primary"
-          >
-            <Phone className="h-4 w-4" />
-            Call Us
-          </a>
           <div className="flex gap-4 px-3 py-2">
             <button
               onClick={() => toast("We are excited to launch social media soon, please check back!", { position: "top-center" })}
