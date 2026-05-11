@@ -30,7 +30,9 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider">
-              Contact
+              <Link to="/contact" className="hover:text-primary">
+                Sign Up for 2 Weeks Free
+              </Link>
             </h4>
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
               <a href="tel:+17077471722" className="flex items-center gap-2 hover:text-primary">
