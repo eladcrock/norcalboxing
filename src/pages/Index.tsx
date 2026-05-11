@@ -5,7 +5,7 @@ import { Users, User, Baby } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import MembershipCTA from "@/components/MembershipCTA";
-import logo from "@/assets/logo-black.png";
+import logo from "@/assets/logo-secondary.png";
 import groupPhoto from "@/assets/hero-home.jpg";
 
 const programs = [
