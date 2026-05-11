@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import heroAbout from "@/assets/hero-about.jpg";
-import headshot from "@/assets/headshot.png";
 import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
@@ -17,25 +16,17 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl">
             <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight md:text-4xl">
-              Our <span className="text-primary">Story</span>
+              Our <span className="text-primary">Philosophy</span>
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                NorCal Boxing Club is brought to you by the same team behind Benicia Boxing &
-                Martial Arts. After years of building a thriving boxing community in Benicia,
-                we're expanding to Fairfield to bring the same professional instruction, clean
-                facilities, and welcoming atmosphere to more of Northern California.
+                Nor Cal Boxing is the best training facility for Boxing training. What makes us the best? We coach not only for the purpose of creating tournament fighters and trophy winners. We coach for the purpose of helping people. There is an old saying, "it does not take a good coach to train an easy boxer, but it takes a great coach to train a difficult boxer."
               </p>
               <p>
-                Our goal is to instill a high level of skill while imparting the traditions of
-                respect, self-discipline, humility, and compassion. Whether you're looking to
-                compete, get in shape, or learn self-defense, we have experienced instructors
-                who can help you reach your goals in a fun and safe environment.
+                There is an unwritten policy in some gyms throughout the world to screen all potential boxers. This "screening" Process consists of sparring with one of the top fighters in the gym, and getting seriously beaten and hurt. Those who could not take this beating would not show up for their next training session, thereby insuring that only the toughest, most confident fighters make it.
               </p>
               <p>
-                Boxing training helps improve physical fitness, including coordination,
-                flexibility, and strength. The practice also reinforces some core values,
-                 such as perseverance and self-control.
+                At Nor Cal Boxing we have exactly the opposite mission. We pride ourselves on being able to train people who may not be natural boxers or fighters. We feel this is a mark of a good coach. A coach who can take a disabled person, a rebellious teenager or a timid child and make a confident, self-assured, skilled fighter out of him or her is an example. Come experience the best!
               </p>
             </div>
           </div>
@@ -77,27 +68,15 @@ const About = () => {
         </div>
       </section>
 
-      {/* Coach */}
+      {/* Program */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight md:text-4xl">
-              Meet the <span className="text-primary">Coach</span>
-            </h2>
-            <div className="mx-auto mb-6 h-32 w-32 overflow-hidden rounded-full">
-              <img
-                src={headshot}
-                alt="Head Coach"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <h3 className="mb-1 text-xl font-bold">Head Coach</h3>
-            <p className="mb-4 text-sm text-primary">Founder, NorCal Boxing Club & Benicia Boxing</p>
             <p className="text-muted-foreground">
-              With years of experience in both boxing and martial arts, Coach Andy
-              brings passion, expertise, and a genuine commitment to each member's growth. His
-              mission is to make boxing accessible, safe, and empowering for everyone, from
-              first-timers to seasoned fighters.
+              The Nor Cal boxing program is geared for everyone ages 10 and up and all levels of experience. We offer a highly organized training regimen that is oriented around your personal goals. Whether you're looking to learn the basics, get fit, fight in the amateurs or go professional, we are confident that we can help you reach your goals. We offer both private and group training in a modern facility which is fully equipped with punching bags and a ring. We are also registered with USA Boxing.
+            </p>
+            <p className="mt-4 text-muted-foreground">
+              The goal at Nor Cal Boxing is to instill a high level of confidence, discipline and effective boxing skills within every boxer we train. Sparring is optional
             </p>
           </div>
         </div>
