@@ -83,6 +83,34 @@ const About = () => {
         </div>
       </section>
 
+      {/* Benefits */}
+      <section className="bg-secondary py-16">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="mb-8 text-center text-3xl font-bold uppercase tracking-tight md:text-4xl">
+              Benefits of <span className="text-primary">Boxing</span>
+            </h2>
+            <ul className="grid gap-3 text-muted-foreground sm:grid-cols-2">
+              {[
+                "Enhanced Cardiovascular Health",
+                "Improved Core Stability and Total-Body Strength",
+                "Better Coordination and Body Awareness",
+                "Improved Body Composition / Increased Muscle Tone",
+                "Stress relief and improved mental health",
+                "Improved Confidence and Self-Esteem",
+                "Build Strong Bones and Ligaments",
+                "Fat Burning",
+              ].map((b) => (
+                <li key={b} className="flex items-start gap-2">
+                  <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Membership */}
       <MembershipCTA />
     </main>
