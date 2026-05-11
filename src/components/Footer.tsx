@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import { toast } from "sonner";
 import YelpIcon from "@/components/icons/YelpIcon";
-import logo from "@/assets/logo-black.png";
+import logo from "@/assets/logo-secondary.png";
 import benicicaLogo from "@/assets/benicia-logo.png";
 
 const Footer = () => {
