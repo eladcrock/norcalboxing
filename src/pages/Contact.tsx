@@ -171,17 +171,21 @@ const Contact = () => {
                     }}
                     className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary"
                   >
-                    <Mail className="h-5 w-5 text-primary" /> info@norcalboxingclub.com
+                    <Mail className="h-5 w-5 text-primary" /> info@NorCalBoxingClub.com
                   </a>
 
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=323+W+Texas+St+Fairfield+CA+94533"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary"
+                    className="flex items-start gap-3 text-sm text-muted-foreground hover:text-primary"
                   >
-                    <MapPin className="h-5 w-5 text-primary" />
-                    323 W Texas St, Fairfield, CA 94533
+                    <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                    <span>
+                      323 W. Texas St.
+                      <br />
+                      Fairfield, CA 94533
+                    </span>
                   </a>
                 </CardContent>
               </Card>
