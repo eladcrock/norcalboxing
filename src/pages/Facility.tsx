@@ -6,12 +6,12 @@ const Facility = () => {
   return (
     <main>
       {/* Custom hero — image shown in full, text below so nothing is cropped */}
-      <section className="bg-secondary">
+      <section className="bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 pt-10 pb-6 text-center">
           <h1 className="text-4xl font-extrabold uppercase tracking-tight md:text-6xl lg:text-7xl">
             Our <span className="text-primary">Facility</span>
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground md:text-xl">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-secondary-foreground/80 md:text-xl">
             A clean, modern, fully-equipped boxing gym in Fairfield.
           </p>
         </div>
