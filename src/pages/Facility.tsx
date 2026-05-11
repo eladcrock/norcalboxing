@@ -24,6 +24,22 @@ const Facility = () => {
         </div>
       </section>
 
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
+            <Camera className="mb-6 h-12 w-12 text-primary" />
+            <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
+              More Photos <span className="text-primary">Coming Soon</span>
+            </h2>
+            <p className="text-muted-foreground">
+              We're putting the finishing touches on our facility and will be sharing more
+              photos very soon. Stop by in person to check out our ring, punching bags, and
+              training space.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <MembershipCTA />
     </main>
   );
