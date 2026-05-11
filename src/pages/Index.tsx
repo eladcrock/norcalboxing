@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Users, User, Baby } from "lucide-react";
+import { Users, User, Baby } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import logo from "@/assets/logo-black.png";
