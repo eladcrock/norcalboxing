@@ -1,30 +1,25 @@
-import HeroSection from "@/components/HeroSection";
 import heroFacility from "@/assets/hero-facility.png";
 import MembershipCTA from "@/components/MembershipCTA";
-import { Camera } from "lucide-react";
 
 const Facility = () => {
   return (
     <main>
-      <HeroSection
-        backgroundImage={heroFacility}
-        imageClassName="absolute inset-0 h-full w-full object-contain object-center"
-        title="Our Facility"
-        subtitle="A clean, modern, fully-equipped boxing gym in Fairfield."
-      />
-
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
-            <Camera className="mb-6 h-16 w-16 text-primary" />
-            <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
-              Photos <span className="text-primary">Coming Soon</span>
-            </h2>
-            <p className="text-muted-foreground">
-              We're putting the finishing touches on our facility and will be sharing photos very
-              soon. Stop by in person to check out our ring, punching bags, and training space.
-            </p>
-          </div>
+      {/* Custom hero — image shown in full, text below so nothing is cropped */}
+      <section className="bg-secondary">
+        <div className="container mx-auto px-4 pt-10 pb-6 text-center">
+          <h1 className="text-4xl font-extrabold uppercase tracking-tight md:text-6xl lg:text-7xl">
+            Our <span className="text-primary">Facility</span>
+          </h1>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground md:text-xl">
+            A clean, modern, fully-equipped boxing gym in Fairfield.
+          </p>
+        </div>
+        <div className="mx-auto max-w-6xl px-4 pb-10">
+          <img
+            src={heroFacility}
+            alt="Inside the NorCal Boxing Club facility — boxing ring, heavy bags, and hex lighting"
+            className="mx-auto h-auto w-full rounded-lg shadow-lg"
+          />
         </div>
       </section>
 
