@@ -21,13 +21,13 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                NorCal Boxing Club is the best training facility for Boxing training. What makes us the best? We coach not only for the purpose of creating tournament fighters and trophy winners. We coach for the purpose of helping people. There is an old saying, "it does not take a good coach to train an easy boxer, but it takes a great coach to train a difficult boxer."
+                Nor Cal Boxing Club is the best training facility for Boxing training. What makes us the best? We coach not only for the purpose of creating tournament fighters and trophy winners. We coach for the purpose of helping people. There is an old saying, "it does not take a good coach to train an easy boxer, but it takes a great coach to train a difficult boxer."
               </p>
               <p>
                 There is an unwritten policy in some gyms throughout the world to screen all potential boxers. This "screening" Process consists of sparring with one of the top fighters in the gym, and getting seriously beaten and hurt. Those who could not take this beating would not show up for their next training session, thereby insuring that only the toughest, most confident fighters make it.
               </p>
               <p>
-                At NorCal Boxing Club we have exactly the opposite mission. We pride ourselves on being able to train people who may not be natural boxers or fighters. We feel this is a mark of a good coach. A coach who can take a disabled person, a rebellious teenager or a timid child and make a confident, self-assured, skilled fighter out of him or her is an example. Come experience the best!
+                At Nor Cal Boxing Club we have exactly the opposite mission. We pride ourselves on being able to train people who may not be natural boxers or fighters. We feel this is a mark of a good coach. A coach who can take a disabled person, a rebellious teenager or a timid child and make a confident, self-assured, skilled fighter out of him or her is an example. Come experience the best!
               </p>
             </div>
           </div>
@@ -74,10 +74,10 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-muted-foreground">
-              The NorCal Boxing Club program is geared for everyone ages 10 and up and all levels of experience. We offer a highly organized training regimen that is oriented around your personal goals. Whether you're looking to learn the basics, get fit, fight in the amateurs or go professional, we are confident that we can help you reach your goals. We offer both private and group training in a modern facility which is fully equipped with punching bags and a ring. We are also registered with USA Boxing.
+              The Nor Cal Boxing Club program is geared for everyone ages 10 and up and all levels of experience. We offer a highly organized training regimen that is oriented around your personal goals. Whether you're looking to learn the basics, get fit, fight in the amateurs or go professional, we are confident that we can help you reach your goals. We offer both private and group training in a modern facility which is fully equipped with punching bags and a ring. We are also registered with USA Boxing.
             </p>
             <p className="mt-4 text-muted-foreground">
-              The goal at NorCal Boxing Club is to instill a high level of confidence, discipline and effective boxing skills within every boxer we train. Sparring is optional
+              The goal at Nor Cal Boxing Club is to instill a high level of confidence, discipline and effective boxing skills within every boxer we train. Sparring is optional
             </p>
           </div>
         </div>
