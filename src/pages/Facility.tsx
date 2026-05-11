@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import heroPrograms from "@/assets/hero-programs.jpg";
+import heroFacility from "@/assets/hero-facility.png";
 import MembershipCTA from "@/components/MembershipCTA";
 import { Camera } from "lucide-react";
 
@@ -7,7 +7,7 @@ const Facility = () => {
   return (
     <main>
       <HeroSection
-        backgroundImage={heroPrograms}
+        backgroundImage={heroFacility}
         title="Our Facility"
         subtitle="A clean, modern, fully-equipped boxing gym in Fairfield."
       />
