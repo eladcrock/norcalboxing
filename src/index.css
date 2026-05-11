@@ -77,11 +77,16 @@ html {
     color: hsl(var(--secondary-foreground) / 0.88);
   }
 
-  .bg-secondary .bg-card {
+  .bg-secondary .bg-card,
+  .bg-secondary .bg-card .text-foreground {
     color: hsl(var(--card-foreground));
   }
 
   .bg-secondary .bg-card .text-muted-foreground {
     color: hsl(var(--muted-foreground));
   }
+}
+
+html, body {
+  overflow-x: hidden;
 }
