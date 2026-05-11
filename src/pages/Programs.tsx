@@ -78,7 +78,7 @@ const Programs = () => {
           <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
             Class <span className="text-primary">Schedule</span>
           </h2>
-          <p className="mx-auto mb-6 max-w-2xl text-muted-foreground">
+          <p className="mx-auto mb-6 max-w-2xl text-secondary-foreground/80">
             We offer flexible class times throughout the week to fit your schedule. Contact us for the most up to date class
             times and availability.
           </p>
