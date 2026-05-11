@@ -13,7 +13,7 @@ const programs = [
     icon: Users,
     title: "Group Classes",
     description:
-      "Boxing fundamentals from the ground up — build technique, fitness, and mental clarity.",
+      "Boxing fundamentals from the ground up. Build technique, fitness, and mental clarity.",
   },
   {
     icon: User,
