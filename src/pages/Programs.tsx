@@ -73,7 +73,7 @@ const Programs = () => {
       <MembershipCTA />
 
       {/* Schedule info */}
-      <section className="bg-secondary py-16">
+      <section className="bg-secondary py-16 text-secondary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
             Class <span className="text-primary">Schedule</span>
