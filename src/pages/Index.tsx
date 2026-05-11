@@ -33,13 +33,13 @@ const Index = () => {
   return (
     <main>
       {/* Home Hero with Logo */}
-      <section className="flex min-h-[60vh] items-center justify-center bg-secondary py-16">
+      <section className="flex min-h-[60vh] items-center justify-center bg-secondary py-16 text-secondary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-6 text-3xl font-bold uppercase tracking-tight md:text-5xl">
             Welcome <span className="text-primary">All</span>
           </h2>
           <img src={logo} alt="Nor Cal Boxing Club" className="mx-auto mb-6 h-64 w-auto md:h-80 lg:h-[28rem]" />
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-secondary-foreground/80 md:text-xl">
             Professional boxing training for all ages in a state-of-the-art facility.
           </p>
           <Button asChild size="lg" className="animate-fade-in text-base font-semibold uppercase tracking-wider [animation-delay:0.8s] [animation-fill-mode:backwards]">
