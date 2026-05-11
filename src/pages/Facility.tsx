@@ -33,8 +33,8 @@ const Facility = () => {
             </h2>
             <p className="text-muted-foreground">
               We're putting the finishing touches on our facility and will be sharing more
-              photos soon. In the meantime, drop in and see it for yourself. Check out the
-              ring, the heavy bags, and the energy in person.
+              photos very soon. Stop by in person to check out our ring, punching bags, and
+              training space.
             </p>
           </div>
         </div>
