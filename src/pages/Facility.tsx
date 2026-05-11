@@ -1,6 +1,8 @@
 import heroFacility from "@/assets/hero-facility.png";
 import MembershipCTA from "@/components/MembershipCTA";
 import { Camera } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Facility = () => {
   return (
@@ -41,6 +43,20 @@ const Facility = () => {
       </section>
 
       <MembershipCTA />
+
+      <section className="bg-secondary py-16 text-secondary-foreground">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
+            Get Two Weeks <span className="text-primary">Free</span>
+          </h2>
+          <p className="mx-auto mb-8 max-w-xl text-secondary-foreground/80">
+            Come see the facility for yourself. Try our 2 week free trial, no experience necessary.
+          </p>
+          <Button asChild size="lg" className="text-base font-semibold uppercase tracking-wider">
+            <Link to="/contact">Sign Up Now</Link>
+          </Button>
+        </div>
+      </section>
     </main>
   );
 };
