@@ -49,12 +49,12 @@ const Programs = () => {
               {
                 title: "Private Training",
                 description:
-                  "Personalized coaching tailored to your goals. Ideal for competition prep, accelerated learning, or focused technique work with our experienced instructors.",
+                  "Personalized coaching tailored to your goals. 30 and 60 minute options offered. Ideal for competition prep, accelerated learning, or focused technique work with our experienced instructors.",
               },
               {
-                title: "Youth Boxing",
+                title: "Ages 10 and up",
                 description:
-                  "Structured classes for ages 12–17. We teach technique, discipline, and sportsmanship, helping kids improve coordination, flexibility, and strength, including life lessons like perseverance and self-control.",
+                  "Structured classes for ages 10 and up. We teach technique, discipline, and sportsmanship, helping kids improve coordination, flexibility, and strength, including life lessons like perseverance and self-control.",
               },
             ].map((p) => (
               <Card key={p.title} className="border-border bg-card">
