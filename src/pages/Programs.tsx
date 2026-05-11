@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import heroPrograms from "@/assets/hero-programs.jpg";
 import PhotoGallery from "@/components/PhotoGallery";
+import MembershipCTA from "@/components/MembershipCTA";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -67,6 +68,9 @@ const Programs = () => {
           </div>
         </div>
       </section>
+
+      {/* Membership */}
+      <MembershipCTA />
 
       {/* Schedule info */}
       <section className="bg-secondary py-16">
