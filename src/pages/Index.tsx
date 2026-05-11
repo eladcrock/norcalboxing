@@ -13,19 +13,19 @@ const programs = [
     icon: Users,
     title: "Group Classes",
     description:
-      "Covering boxing fundamentals from the ground up, building on knowledge of technique, simultaneously improving body composition, while allowing for stress relief and improved mental health.",
+      "Boxing fundamentals from the ground up — build technique, fitness, and mental clarity.",
   },
   {
     icon: User,
     title: "Private Training",
     description:
-      "Personalized coaching tailored to your goals. 30 and 60 minute options offered. Ideal for competition prep, accelerated learning, or focused technique work with our experienced instructors.",
+      "One-on-one coaching tailored to your goals. 30 and 60 minute sessions available.",
   },
   {
     icon: Baby,
     title: "Ages 10 and up",
     description:
-      "Structured classes for ages 10 and up. We teach technique, discipline, and sportsmanship, helping kids improve coordination, flexibility, and strength, including life lessons like perseverance and self-control.",
+      "Structured classes that build technique, discipline, and confidence for kids and teens.",
   },
 ];
 
