@@ -19,7 +19,9 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-2">
           {/* Brand */}
           <div>
-            <img src={logo} alt="Nor Cal Boxing Club" className="mb-3 h-24 w-24 rounded-full object-cover" />
+            <div className="mb-3 h-20 w-20 overflow-hidden rounded-full">
+              <img src={logo} alt="Nor Cal Boxing Club" className="h-full w-full scale-150 object-cover" />
+            </div>
             <a href="https://beniciabma.com" target="_blank" rel="noopener noreferrer" className="mt-3 inline-block">
               <img src={benicicaLogo} alt="Benicia Boxing & Martial Arts" className="h-12 w-auto" />
             </a>
