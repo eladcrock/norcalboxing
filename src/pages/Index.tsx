@@ -5,7 +5,7 @@ import { Users, User, Baby } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import MembershipCTA from "@/components/MembershipCTA";
-import logo from "@/assets/logo-black.png";
+import logo from "@/assets/logo-white.png";
 import groupPhoto from "@/assets/hero-home.jpg";
 
 const programs = [
@@ -52,7 +52,7 @@ const Index = () => {
       <section className="py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
-            Community & <span className="text-primary">Camaraderie</span>
+            Community & <span className="text-accent">Camaraderie</span>
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
             Boxing may be an individual sport, but we work out, train, and get better as a team.
@@ -71,7 +71,7 @@ const Index = () => {
       </section>
 
       {/* Programs */}
-      <section className="bg-secondary py-16">
+      <section className="bg-secondary py-16 text-secondary-foreground">
         <div className="container mx-auto px-4">
           <h2 className="mb-10 text-center text-3xl font-bold uppercase tracking-tight md:text-4xl">
             Our <span className="text-primary">Programs</span>
