@@ -154,7 +154,7 @@ const Contact = () => {
             {/* INFO */}
             <div className="space-y-6">
               <h2 className="mb-6 text-2xl font-bold uppercase tracking-tight">
-                Get in <span className="text-primary">Touch</span>
+                Need to get in <span className="text-primary">touch sooner</span>
               </h2>
 
               <Card className="border-border bg-card">
