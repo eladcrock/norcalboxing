@@ -41,7 +41,7 @@ const MembershipCTA = () => {
                 <p className="my-4 text-5xl font-bold">
                   $100<span className="text-base font-normal text-muted-foreground">/month</span>
                 </p>
-                <p className="mb-6 text-sm text-muted-foreground">Unlimited classes — limited spots</p>
+                <p className="mb-6 text-sm text-muted-foreground">Unlimited classes. Limited spots.</p>
                 <Button asChild className="mt-auto text-base font-semibold uppercase tracking-wider">
                   <Link to="/contact">Claim Your Spot</Link>
                 </Button>

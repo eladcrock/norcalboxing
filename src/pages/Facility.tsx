@@ -17,7 +17,7 @@ const Facility = () => {
         <div className="mx-auto max-w-6xl px-4 pb-10">
           <img
             src={heroFacility}
-            alt="Inside the NorCal Boxing Club facility — boxing ring, heavy bags, and hex lighting"
+            alt="Inside the NorCal Boxing Club facility with boxing ring, heavy bags, and hex lighting"
             className="mx-auto h-auto w-full rounded-lg shadow-lg"
           />
         </div>
