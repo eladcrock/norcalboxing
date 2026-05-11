@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Users, User, Baby } from "lucide-react";
+import { Users, User, Baby } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import logo from "@/assets/logo-black.png";
@@ -18,13 +18,13 @@ const programs = [
     icon: User,
     title: "Private Training",
     description:
-      "Personalized coaching tailored to your goals. Ideal for competition prep, accelerated learning, or focused technique work with our experienced instructors.",
+      "Personalized coaching tailored to your goals. 30 and 60 minute options offered. Ideal for competition prep, accelerated learning, or focused technique work with our experienced instructors.",
   },
   {
     icon: Baby,
-    title: "Youth Boxing",
+    title: "Ages 10 and up",
     description:
-      "Structured classes for ages 12–17. We teach technique, discipline, and sportsmanship, helping kids improve coordination, flexibility, and strength, including life lessons like perseverance and self-control.",
+      "Structured classes for ages 10 and up. We teach technique, discipline, and sportsmanship, helping kids improve coordination, flexibility, and strength, including life lessons like perseverance and self-control.",
   },
 ];
 
@@ -81,15 +81,15 @@ const Index = () => {
                 <CardContent className="flex flex-col items-center p-8 text-center">
                   <p.icon className="mb-4 h-10 w-10 text-primary" />
                   <h3 className="mb-2 text-xl font-bold">{p.title}</h3>
-                  <p className="mb-4 text-sm text-muted-foreground">{p.description}</p>
-                  <Button asChild variant="outline" size="sm">
-                    <Link to="/programs">
-                      Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                    </Link>
-                  </Button>
+                  <p className="text-sm text-muted-foreground">{p.description}</p>
                 </CardContent>
               </Card>
             ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Button asChild size="lg" className="text-base font-semibold uppercase tracking-wider">
+              <Link to="/contact">Sign Up For Your Free 2 Week Trial</Link>
+            </Button>
           </div>
         </div>
       </section>
