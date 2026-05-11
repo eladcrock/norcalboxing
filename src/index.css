@@ -66,3 +66,22 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer components {
+  .bg-secondary {
+    color: hsl(var(--secondary-foreground));
+  }
+
+  .bg-secondary .text-muted-foreground,
+  .bg-secondary .text-foreground {
+    color: hsl(var(--secondary-foreground) / 0.88);
+  }
+
+  .bg-secondary .bg-card {
+    color: hsl(var(--card-foreground));
+  }
+
+  .bg-secondary .bg-card .text-muted-foreground {
+    color: hsl(var(--muted-foreground));
+  }
+}
