@@ -52,7 +52,7 @@ const Index = () => {
       <section className="py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
-            Community & <span className="text-primary">Camaraderie</span>
+            Community & <span className="text-accent">Camaraderie</span>
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
             Boxing may be an individual sport, but we work out, train, and get better as a team.
