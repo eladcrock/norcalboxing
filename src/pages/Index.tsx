@@ -71,7 +71,7 @@ const Index = () => {
       </section>
 
       {/* Programs */}
-      <section className="bg-secondary py-16">
+      <section className="bg-secondary py-16 text-secondary-foreground">
         <div className="container mx-auto px-4">
           <h2 className="mb-10 text-center text-3xl font-bold uppercase tracking-tight md:text-4xl">
             Our <span className="text-primary">Programs</span>
