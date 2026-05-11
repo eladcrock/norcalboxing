@@ -70,7 +70,7 @@ const PrivacyPolicy = forwardRef<HTMLElement>((_, ref) => {
               </p>
               <ul className="ml-6 list-disc space-y-1">
                 <li>
-                  <span className="font-medium text-foreground">EmailJS</span> —
+                  <span className="font-medium text-foreground">EmailJS</span>:
                   to process contact form submissions. Your name, email, phone
                   number, and message are transmitted to EmailJS for delivery.
                   Please review{" "}
@@ -88,7 +88,7 @@ const PrivacyPolicy = forwardRef<HTMLElement>((_, ref) => {
                   <span className="font-medium text-foreground">
                     Google Maps
                   </span>{" "}
-                  — embedded on our contact page. Google may collect usage data.
+                  : embedded on our contact page. Google may collect usage data.
                   Please review{" "}
                   <a
                     href="https://policies.google.com/privacy"
@@ -104,7 +104,7 @@ const PrivacyPolicy = forwardRef<HTMLElement>((_, ref) => {
                   <span className="font-medium text-foreground">
                     Google Search Console / Site Verification
                   </span>{" "}
-                  — used for website indexing and search performance monitoring.
+                  : used for website indexing and search performance monitoring.
                 </li>
               </ul>
               <p className="mt-2">
