@@ -104,7 +104,7 @@ const Programs = () => {
           <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
             Get Two Weeks <span className="text-primary">Free</span>
           </h2>
-          <p className="mx-auto mb-8 max-w-xl text-muted-foreground">
+          <p className="mx-auto mb-8 max-w-xl text-secondary-foreground/80">
            Try our 2 week free trial and see for yourself how the art of boxing can change your life! No experience necessary.
           </p>
           <Button asChild size="lg" className="text-base font-semibold uppercase tracking-wider">
