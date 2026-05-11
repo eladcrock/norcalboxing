@@ -58,7 +58,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="mt-4 flex gap-3">
-              <button onClick={handleSocialClick} aria-label="Facebook" className="text-muted-foreground transition-colors hover:text-primary">
+              <button onClick={handleSocialClick} aria-label="Facebook" className="text-muted-foreground transition-all duration-200 hover:scale-125 hover:text-primary">
                 <Facebook className="h-5 w-5" />
               </button>
               <a
@@ -66,7 +66,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="text-muted-foreground transition-colors hover:text-primary"
+                className="text-muted-foreground transition-all duration-200 hover:scale-125 hover:text-primary"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -75,7 +75,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Yelp"
-                className="text-muted-foreground transition-colors hover:text-primary"
+                className="inline-flex text-muted-foreground transition-all duration-200 hover:scale-125 hover:text-primary"
               >
                 <YelpIcon className="h-6 w-6" />
               </a>
