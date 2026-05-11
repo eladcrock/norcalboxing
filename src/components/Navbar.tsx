@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Programs", to: "/programs" },
+  { label: "Facility", to: "/facility" },
   { label: "Contact", to: "/contact" },
   { label: "Benicia BMA", to: "https://beniciabma.com", external: true },
 ];
