@@ -4,7 +4,7 @@ import { Menu, X, Instagram, Facebook } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import YelpIcon from "@/components/icons/YelpIcon";
-import logo from "@/assets/logo-black.png";
+import logo from "@/assets/logo-secondary.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -50,11 +50,11 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          <img
-            src={logo}
-            alt="Nor Cal Boxing Club"
-            className={`h-20 w-auto transition-opacity duration-300 ${showLogo ? "opacity-100" : "opacity-0"}`}
-          />
+          <div
+            className={`h-16 w-16 overflow-hidden rounded-full transition-opacity duration-300 ${showLogo ? "opacity-100" : "opacity-0"}`}
+          >
+            <img src={logo} alt="Nor Cal Boxing Club" className="h-full w-full scale-150 object-cover" />
+          </div>
         </Link>
 
         {/* Desktop nav */}
