@@ -7,6 +7,7 @@ interface HeroSectionProps {
   ctaText?: string;
   ctaLink?: string;
   backgroundImage?: string;
+  imageClassName?: string;
 }
 
 const HeroSection = ({
@@ -15,15 +16,16 @@ const HeroSection = ({
   ctaText,
   ctaLink,
   backgroundImage,
+  imageClassName = "absolute inset-0 h-full w-full object-cover",
 }: HeroSectionProps) => {
   return (
-    <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden">
+    <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden bg-background">
       {/* Background image */}
       {backgroundImage && (
         <img
           src={backgroundImage}
           alt=""
-          className="absolute inset-0 h-full w-full object-cover"
+          className={imageClassName}
         />
       )}
       {/* Overlay */}
