@@ -1,6 +1,8 @@
 import heroFacility from "@/assets/hero-facility.png";
 import MembershipCTA from "@/components/MembershipCTA";
 import { Camera } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Facility = () => {
   return (
