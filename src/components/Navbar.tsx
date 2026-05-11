@@ -4,7 +4,7 @@ import { Menu, X, Instagram, Facebook } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import YelpIcon from "@/components/icons/YelpIcon";
-import logo from "@/assets/logo-black.png";
+import logo from "@/assets/logo-secondary.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
