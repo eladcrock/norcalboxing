@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import heroAbout from "@/assets/hero-about.jpg";
+import MembershipCTA from "@/components/MembershipCTA";
 import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
@@ -81,6 +82,9 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Membership */}
+      <MembershipCTA />
     </main>
   );
 };
