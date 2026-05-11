@@ -17,7 +17,6 @@ const navLinks = [
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [showLogo, setShowLogo] = useState(true);
   const location = useLocation();
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -26,33 +25,11 @@ const Navbar = () => {
     setMobileOpen(false);
   }, [location.pathname]);
 
-  // Hide logo on home page until user scrolls past hero
-  useEffect(() => {
-    if (location.pathname !== "/") {
-      setShowLogo(true);
-      return;
-    }
-
-    setShowLogo(false);
-
-    const handleScroll = () => {
-      // Show logo after scrolling past ~60vh (the hero section)
-      const threshold = window.innerHeight * 0.5;
-      setShowLogo(window.scrollY > threshold);
-    };
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [location.pathname]);
-
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          <div
-            className={`h-16 w-16 overflow-hidden rounded-full transition-opacity duration-300 ${showLogo ? "opacity-100" : "opacity-0"}`}
-          >
+          <div className="h-16 w-16 overflow-hidden rounded-full">
             <img src={logo} alt="Nor Cal Boxing Club" className="h-full w-full scale-150 object-cover" />
           </div>
         </Link>
